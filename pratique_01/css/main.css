@@ -1,6 +1,12 @@
 @import url(default.css);
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 /* DM serif Display을 웹폰트로 선언하는 css 불러오기 */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url(../fonts/Pretendard-Bold.woff2) format('woff2'), url(../fonts/Pretendard-Bold.woff) format('woff');
+}
 body {
     color: #133e35;
     font-family: "DM Serif Display", serif;;
@@ -15,9 +21,49 @@ body {
 }
 .touch {
     text-align: center;
+    margin: 0 0 134px 0;
 }
-h1 {
+.touch h1 {
     font-size: 100px;
     line-height: 1;
     margin: 90px 0 38px 0;
+}
+.touch p {
+    font-family:  'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
+}
+.cardview ul {
+    display: flex;
+    justify-content: space-between;
+}
+.cardview ul li {
+    background-color: #ebeae5;
+    width: 404px;
+    height: 395px;
+    border-radius: 20px;
+    padding: 45px 0 0 47px;
+}
+.cardview ul li:hover { /* hover : 마우스 오버 */
+    background-color: #fdeea3;
+    transition: 0.7s;
+}
+.cardview ul li h2 {
+    font-size: 53px;
+    line-height: 0.84;
+    letter-spacing: -0.02em;
+}
+.cardview ul li .txt {
+    font-family:  'Pretendard';
+    font-weight: 700;
+    font-size: 17px;
+    margin: 11px 0 214px 0;
+}
+.cardview ul li .general {
+    margin: 11px 0 170px 0;
+}
+.cardview ul li .e-mail {
+    font-family:  'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
 }
