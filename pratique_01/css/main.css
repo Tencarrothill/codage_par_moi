@@ -67,3 +67,58 @@ body {
     font-weight: 700;
     font-size: 20px;
 }
+.about {
+    margin: 79px 0 0px 0;
+    background-image: url(../imges/about_bg.png);
+    height: 793px;
+    border-radius: 30px; /* 안 줘도 20px 들어간거 같은데 왜인지 모르겠음 */
+    color: #fff;
+}
+.about .txt {
+    text-align: center;
+}
+.about .txt h2 {
+    font-size: 100px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    padding: 156px 0 0 0;
+}
+.about .txt p {
+    font-family: 'Pretendard';
+    line-height: 1.2;
+    margin: 27px 0 32px 0;
+}
+.about .txt a {
+    font-size: 25px;
+    letter-spacing: -0.02em;
+}
+.address {
+    color: #fdeea3;
+    background-color: #133e35;
+    height: 396px;
+    border-radius: 30px;
+    margin: 79px 0 0 0;
+    text-align: center;
+}
+.address h2 {
+    font-size: 64.37px;
+    letter-spacing: -0.02em;
+    padding: 100px 0 30px 0;
+}
+.address p {
+    font-family: 'Pretendard';
+    line-height: 1.2;
+}
+footer .f_top {
+    display: flex;
+}
+footer .f_top .txt {
+    width: 600px;
+    font-size: 53px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 160px 0 200px 0;
+}
+footer .f_top .f_nav {
+    font-size: 433.32px;
+}
