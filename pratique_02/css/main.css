@@ -14,18 +14,41 @@ header {
     height: 100px;
     background-color: grey;
 }
-.wrapper {
+header .wrapper {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-.gnb ul {
+header .logo {
+    margin: 24px 0 0 50px;
+}
+header .gnb ul {
     display: flex;
 }
-.gnb ul li {
+header .gnb ul li {
     color: #fff;
     margin: 36px 55px 0 0;
 }
-.gnb ul li:last-child {
+header .gnb ul li:last-child {
     margin-right: 115px;
+}
+.container .visual {
+    display: flex;
+}
+.container .visual {
+    width: 960px;
+    height: 1080px;
+}
+.container .visual .txt{
+    font-family: "DM Serif Display";
+    font-size: 77px;
+    line-height: 1.1;
+    background: url(../imges/visual_bg_2.png) no-repeat center center / cover;
+    /* background를 한 번에 선언하는 방법! */
+    height: 1080px;
+}
+.container .visual .txt em {
+    font-family: "Pretendard";
+    font-weight: 300;
+    font-size: 38px;
 }
