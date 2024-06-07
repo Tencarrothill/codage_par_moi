@@ -12,43 +12,30 @@ html, body {
 }
 header {
     height: 100px;
-    background-color: grey;
+    background: url(../imges/header_bg.png) no-repeat center center / cover;
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
 }
 header .wrapper {
-    margin: 0 auto;
+    width: 1260px;
+    margin: 0 auto;/*가운데 정렬 명령*/
     display: flex;
     justify-content: space-between;
 }
 header .logo {
-    margin: 24px 0 0 50px;
+    margin: 24px 0 0 0;
 }
 header .gnb ul {
     display: flex;
 }
 header .gnb ul li {
     color: #fff;
-    margin: 36px 55px 0 0;
+    font-size: 22.4px;
+    margin: 36px 56px 0 0;
 }
 header .gnb ul li:last-child {
-    margin-right: 115px;
+    margin-right: 39px;
 }
-.container .visual {
-    display: flex;
-}
-.container .visual {
-    width: 960px;
+.visual {
     height: 1080px;
-}
-.container .visual .txt{
-    font-family: "DM Serif Display";
-    font-size: 77px;
-    line-height: 1.1;
-    background: url(../imges/visual_bg_2.png) no-repeat center center / cover;
-    /* background를 한 번에 선언하는 방법! */
-    height: 1080px;
-}
-.container .visual .txt em {
-    font-family: "Pretendard";
-    font-weight: 300;
-    font-size: 38px;
+    background: url(../imges/visual_bg.png) no-repeat center center / cover;
 }
