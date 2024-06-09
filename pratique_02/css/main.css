@@ -3,7 +3,7 @@
 
 html, body {
     color: #3d3d3d;
-    font-family: 'Prentendard';
+    font-family: 'Pretendard';
     font-size: 22.4px;
     font-weight: 300;
     letter-spacing: 0;
@@ -45,11 +45,64 @@ header .gnb ul li:last-child {
 }
 .container .visual .txt {
     color: #fff;
-    font-size: 35px;
-    line-height: 1.1;
-    padding: 194px 0 0 642px;
+    padding: 195px 0 0 645px;
 }
-.container .visual .txt em {
+.container .visual .txt strong {
+    font-size: 35px;
+    display: block;
+    padding-bottom: 12px;
+}
+.container .visual .txt h2 {
     font-family: "DM Serif Display";
-    font-size: 72px;
+    font-size: 70px;
+    line-height: 1.09;
+    padding-bottom: 27px;
+}
+.container .biz .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.container .biz {
+    margin: 179px 0 200px 0;
+}
+.container .biz .txt {
+    margin: 100px 0 0 0;
+}
+.container .biz .txt strong {
+    color: #5F9FC3;
+    font-size: 25px;
+    font-weight: 900;
+}
+.container .biz .txt h2 {
+    color: #1d1d1d;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.26;
+    margin: 10px 0 41px 0;
+}
+.container .biz .txt p {
+    font-size: 35px;
+}
+.container .biz .txt .more {
+    color: #5F9FC3;
+    margin: 48px 0 0 0;
+}
+.container .biz .txt .more a {
+    display: flex;
+}
+.container .biz .txt .more a:hover p {
+    font-weight: 900;
+    letter-spacing: -0.06em;
+}
+.container .biz .txt .more .icn {
+    margin: 0 0 0 20px;
+}
+.container .biz .photo {
+    display: flex;   
+}
+.container .biz .photo .photo_r {
+    margin: 0 0 0 44px;
+}
+.container .biz .photo .photo_r .photo_b {
+    margin: 0 0 50px 0;
 }
