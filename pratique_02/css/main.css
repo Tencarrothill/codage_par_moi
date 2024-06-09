@@ -63,7 +63,7 @@ header .gnb ul li:last-child {
     justify-content: space-between;
 }
 .container .biz {
-    margin: 179px 0 200px 0;
+    margin: 179px 0 240px 0;
 }
 .container .biz .txt {
     margin: 100px 0 0 0;
@@ -106,3 +106,64 @@ header .gnb ul li:last-child {
 .container .biz .photo .photo_r .photo_b {
     margin: 0 0 50px 0;
 }
+.container .news {
+    margin: 0 0 200px 0;
+}
+.container .news .top {
+    display: flex;
+    justify-content: space-between;
+}
+.container .news .top .txt strong {
+    color: #5F9FC3;
+    font-size: 25px;
+    font-weight: 900;
+}
+.container .news .top .txt h2 {
+    color: #1d1d1d;
+    font-size: 50px;
+    margin: 11px 0 60px 0;
+}
+.container .news .top button {
+    display: flex;
+    color: #666;
+    font-size: 20px;
+    margin: 59px 0 0 0;
+}
+.container .news .top button .bt {
+    margin-right: 40px;
+}
+.container .news .cardview ul {
+    display: flex;
+}
+.container .news .cardview ul li {
+    margin-right: 24px;
+}
+.container .news .cardview .photo {
+    width: 404px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 40px 40px 0 0;
+}
+.container .news .cardview .txt {
+    width: 404px;
+    height: 183px;
+    background-color: #fff;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 0 0 40px 40px;
+    padding: 16px 44px 0 44px;
+}
+.container .news .cardview a, em {
+    display: block;
+}
+.container .news .cardview em {
+    color: #666;
+    font-size: 15px;
+}
+.container .news .cardview p {
+    font-size: 33px;
+    font-weight: 1.27;
+}
+/* 
+biz영역에 더보기 마우스오버 명령 손보기
+news영역에 버튼 태그 마우스오버 효과 주기
+ul li애 이미지에 border-radious 왜 안들어가는지 찾기
+ */
