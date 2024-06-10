@@ -90,13 +90,18 @@ header .gnb ul li:last-child {
     font-size: 35px;
     display: inline-block;
     background: url(../imges/more_icon.svg) no-repeat right center;
-    padding: 0 60.5px 0 0;
-    margin: 0 0 10.5px 0;
+    padding: 0 60.5px 10.5px 0;
+    /* biz영역에 더보기 마우스오버 명령에 보더 바텀 줬는데 여백이 안들어감.
+-> 마진이 아니라 패딩으로 주는거였음. */
 }
 .container .biz .txt .more a:hover {
     color: #5F9FC3;
     background-image: url(../imges/more_icon_hover.svg);
     border-bottom: 1px solid #5F9FC3;
+}
+.container .biz .txt .more a span {
+    display: inline-block;
+    margin: 7px 0 0 0;
 }
 .container .biz .photo {
     display: flex;   
@@ -130,6 +135,10 @@ header .gnb ul li:last-child {
     font-size: 20px;
     margin: 59px 0 0 0;
 }
+.container .news .top button .prev:hover em, .news .top button .nxt:hover em {
+    color: #1d1d1d;
+    font-weight: 800;
+}
 .container .news .top button .bt {
     margin-right: 40px;
 }
@@ -154,7 +163,7 @@ header .gnb ul li:last-child {
     border-radius: 0 0 40px 40px;
     padding: 16px 44px 0 44px;
 }
-.container .news .cardview a, em {
+.container .news .cardview a, .news .cardview .txt em {
     display: block;
 }
 .container .news .cardview em {
@@ -165,7 +174,8 @@ header .gnb ul li:last-child {
     font-size: 33px;
     font-weight: 1.27;
 }
-/* 
-biz영역에 더보기 마우스오버 명령에 보더 바텀 줬는데 여백이 안들어감.
+/*  
 news영역에 버튼 태그 마우스오버 효과 주기
+-> 의도한대로 주긴 줬는데 덜그럭 거림... 어떻게 해결할지?
+카드뷰에 사진에 마우스 오버하면 확대되는 효과주기
  */
