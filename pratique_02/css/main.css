@@ -84,18 +84,19 @@ header .gnb ul li:last-child {
     font-size: 35px;
 }
 .container .biz .txt .more {
-    color: #5F9FC3;
     margin: 48px 0 0 0;
 }
 .container .biz .txt .more a {
-    display: flex;
+    font-size: 35px;
+    display: inline-block;
+    background: url(../imges/more_icon.svg) no-repeat right center;
+    padding: 0 60.5px 0 0;
+    margin: 0 0 10.5px 0;
 }
-.container .biz .txt .more a:hover p {
-    font-weight: 900;
-    letter-spacing: -0.06em;
-}
-.container .biz .txt .more .icn {
-    margin: 0 0 0 20px;
+.container .biz .txt .more a:hover {
+    color: #5F9FC3;
+    background-image: url(../imges/more_icon_hover.svg);
+    border-bottom: 1px solid #5F9FC3;
 }
 .container .biz .photo {
     display: flex;   
@@ -138,7 +139,9 @@ header .gnb ul li:last-child {
 .container .news .cardview ul li {
     margin-right: 24px;
 }
-.container .news .cardview .photo {
+.container .news .cardview ul li a .photo img {
+    /* ul li애 이미지에 border-radious 왜 안들어가는지 찾기 -> .photo가 아닌 img에 직접
+명령 부여 하니 적용되었음. */
     width: 404px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
     border-radius: 40px 40px 0 0;
@@ -163,7 +166,6 @@ header .gnb ul li:last-child {
     font-weight: 1.27;
 }
 /* 
-biz영역에 더보기 마우스오버 명령 손보기
+biz영역에 더보기 마우스오버 명령에 보더 바텀 줬는데 여백이 안들어감.
 news영역에 버튼 태그 마우스오버 효과 주기
-ul li애 이미지에 border-radious 왜 안들어가는지 찾기
  */
