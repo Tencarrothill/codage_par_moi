@@ -1,0 +1,50 @@
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+
+.tit {
+    font-size: 50px;
+    font-weight: 900;
+
+}
+.visual {
+    color: #fff;
+    background: url(../imges/visual_bg.png) no-repeat center center / cover;
+    height: 900px;
+}
+.visual .wrapper {
+    position: relative;
+}
+.visual strong {
+    font-size: 100px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.2);
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    margin: 205px 0 0 0;
+}
+.visual h2 {
+    padding: 540px 0 0 0;
+}
+.visual p {
+    font-size: 22px;
+    margin: 22px 0 31px 0;
+}
+.visual .more a {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 900;
+    position: relative;
+    width: 222px;
+}
+.visual .more a::after {
+    background: url(../imges/more_ico.svg) no-repeat center center / contain;
+    content: "";
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    right: 0;
+    top: -3px;
+}

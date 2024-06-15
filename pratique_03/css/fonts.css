@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Noto Sans KR Light'), local('NotoSansKR-Light'), url(../fonts/NotoSans-Light.eot);
+	src: url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+	     url(../fonts/NotoSans-Light.woff2) format('woff2'),
+	     url(../fonts/NotoSans-Light.woff) format('woff'),
+	     url(../fonts/NotoSans-Light.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Noto Sans KR Black'), local('NotoSansKR-Black'), url(../fonts/NotoSans-Black.eot);
+	src: url(../fonts/NotoSans-Black.eot) format('embedded-opentype'),
+	     url(../fonts/NotoSans-Black.woff2) format('woff2'),
+	     url(../fonts/NotoSans-Black.woff) format('woff'),
+	     url(../fonts/NotoSans-Black.otf) format('opentype');
+}
