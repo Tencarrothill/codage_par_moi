@@ -8,7 +8,26 @@
 </head>
 <body>
     <div id="wrap">
-        <header></header>
+        <header>
+            <div class="wrapper">
+                <h1 class="logo"><a href="#n"><img src="imges/logo.png" alt="SLL 로고"></a></h1>
+                <nav class="gnb">
+                    <!-- 클릭하면 기능이 작동됨 (페이지 이동이 아님) 이 경우 button 태그 사용
+                    아이콘의 대부분은 css에서 배경으로 처리함. -->
+                    <button class="gnb_open">메뉴열기</button>
+                    <div class="gnb_wrap">
+                        <ul>
+                            <li><a href="#n">ABOUT</a></li>
+                            <li><a href="#n">WORKS</a></li>
+                            <li><a href="#n">NEWSROOM</a></li>
+                        </ul>
+                    </div><!--gnb_wrap-->
+                </nav>
+                <div class="lang">
+                    <a href="#n">KR</a>
+                </div>
+            </div><!--wrapper-->
+        </header>
         <div class="container">
             <section class="visual">
                 <div class="wrapper">

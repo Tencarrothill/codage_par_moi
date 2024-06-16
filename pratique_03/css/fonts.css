@@ -18,3 +18,9 @@
 	     url(../fonts/NotoSans-Black.woff) format('woff'),
 	     url(../fonts/NotoSans-Black.otf) format('opentype');
 }
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 900;
+    font-style: normal;
+	src: local('S-CoreDream Black'), url(../fonts/SCoreDreamBlack.woff2) format('woff2'), url(../fonts/SCoreDreamBlack.woff) format('woff');
+}
