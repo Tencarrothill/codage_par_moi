@@ -155,12 +155,11 @@ header .lang a::after {
         height: 20px;
         position: absolute;
         right: 0;
-        top: -1px;
+        top: -2px;
     } 
 }/* visual media */
 .contents {
     margin: 153px 0 157px 0;
-    
 }
 .contents .wrapper {
     display: flex;
@@ -212,4 +211,45 @@ header .lang a::after {
 .contents .photo img:last-child {
     margin-right: 0;
 }
-
+@media screen and (max-width:640px) {
+    .contents {
+        margin: 46px 0 0 0;       
+    }
+    .contents .wrapper {
+        display: block;
+    }
+    .contents strong {
+        font-size: 50px;
+    }
+    .contents .txt h2 {
+        font-size: 25px;
+        padding: 181px 0 0 0;
+    }
+    .contents .txt p {
+        font-size: 13px;
+        width: 184px;
+        margin: 9px 0 19px 0 ;
+    }
+    .contents .txt p br {
+        display: none;
+    }
+    .contents .txt .more a {
+        font-size: 13px;
+        font-weight: 900;
+        width: 145px;
+    }
+    .contents .txt .more a::after {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 0;
+        top: -2px;
+    }
+    .contents .photo {
+        margin: 32px 0 0 0;
+    }
+    .contents .photo img {
+        margin-right: 16px;
+        width: 96px;
+    }
+}/* contents media */
