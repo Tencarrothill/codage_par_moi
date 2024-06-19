@@ -371,3 +371,142 @@ header .lang a::after {
         display: none;
     }
 }/* careers media */
+
+footer {
+    background-color: #E61A0F;
+    color: #F6F4E7;
+}
+footer .f_top h2 {
+    font-size: 22px;
+    font-weight: 900;
+    padding: 73px 0 0 0;
+}
+footer .f_top {
+    display: flex;
+}
+footer .f_top .f_nav {
+    display: flex;
+}
+footer .f_top dl {
+    margin: 73px 0 0 108px;
+}
+footer .f_top dl:first-child {
+    margin-left: 167px;
+}
+footer .f_top dl:nth-child(2) {
+    margin-left: calc(108px - 42px)
+}
+footer .f_top dl:nth-child(3) {
+    margin-left: calc(108px - 54px);
+}
+footer .f_top dl dt a {
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 13px;
+    display: block;
+}
+footer .f_top dl dd {
+    display: flex;
+    flex-direction: column;
+}
+footer .f_info {
+    margin: 127px 0 0 434px;
+}
+footer .f_info ul {
+    display: flex;
+
+}footer .f_info ul li {
+    position: relative;
+}
+footer .f_info ul.company li::after {
+    position: absolute;
+    right: 13px;
+    top: 3px;
+    width: 1px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.4);
+    content: "";
+}
+footer .f_info ul.company li:last-child::after {
+    display: none;
+}
+footer .f_info ul li a {
+    font-weight: 900;
+    margin-right: 29px;
+}
+footer .f_info .info {
+    margin: 8px 0;
+}
+footer .f_info .info li {
+    margin-right: 26px;
+}
+footer .f_info .copyright {
+    font-size: 15px;
+    font-weight: 900;
+    margin: 21px 0 0 0;
+    padding-bottom: 73px;
+    color: rgba(255, 255, 255, 0.6);
+}
+footer .wrapper {
+    position: relative;
+}
+footer h1 {
+    position: absolute;
+    left: 0;
+    bottom: 104px;
+
+}
+footer .icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 75px;
+    width: 156px;
+    height: 35px;
+}
+footer .icons a {
+    width: 34px;
+    height: 35px;
+    display: block;
+    margin-left: 15px;
+}
+footer .icons a.lin {
+    background-image: url(../imges/sns1.svg);
+}
+footer .icons a.ins {
+    background-image: url(../imges/sns2.svg);
+    width: 33px;
+    height: 33px;
+}
+footer .icons a.ytb {
+    background-image: url(../imges/sns3.svg);
+    width: 44px;
+    height: 30px;
+}
+footer .top {
+    position: absolute; /* wrapper 기준 정렬 */
+    right: 19px;
+    top: 61px;
+}
+footer .top button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #F6F4E7;
+    border-radius: 50%; /* 동그라미 */
+    font-size: 14px;
+    font-weight: 900;
+    padding-top: 20px;
+    position: relative;
+    cursor: pointer;
+}
+footer .top button::before {
+    background: url(../imges/top_ico.svg) no-repeat center center / contain;
+    position: absolute;
+    left: 9px;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    content: "";
+}
