@@ -205,9 +205,13 @@ header .lang a::after {
 }
 .contents .photo {
     margin: 78px 0 0 0;
+    font-size: 0;
+    line-height: 0;
 }
 .contents .photo img {
     margin-right: 24px;
+    font-size: 0;
+    line-height: 0;
 }
 .contents .photo img:last-child {
     margin-right: 0;
@@ -250,14 +254,16 @@ header .lang a::after {
         margin: 32px 0 0 0;
     }
     .contents .photo img {
-        margin-right: 16px;
         width: 96px;
+        margin-right: 12px;
     }
 }/* contents media */
 
 .careers {
     background-color: #1d1d1d;
     color: #F6F4E7;
+    margin: 67px 0 0 0;
+    padding: 0 0 67px 0;
 }
 .careers .wrapper {
     display: flex;
@@ -297,7 +303,6 @@ header .lang a::after {
     margin-top: 124px;
 }
 .careers .list ul li {
-    border-bottom: 1px solid rgba(102,102,102,0.15);
     margin-bottom: 21px;
 }
 .careers .list ul li a .tol strong {
@@ -314,6 +319,7 @@ header .lang a::after {
     font-weight: 900;
     display: flex;
     text-align: center;
+    border-bottom: 1px solid rgba(102,102,102,0.15);
 }
 .careers .list ul li a .tag ul li {
     margin-right: 29px;
