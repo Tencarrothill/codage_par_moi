@@ -460,6 +460,11 @@ footer h1 {
     position: absolute;
     left: 0;
     bottom: 104px;
+    font-size: 0;
+    line-height: 0;
+    width: 174px;
+    height: 83px;
+    background: url(../imges/f_logo.svg) no-repeat center center / contain;
 
 }
 footer .icons {
@@ -516,3 +521,105 @@ footer .top button::before {
     height: 24px;
     content: "";
 }
+@media screen and (max-width:640px) {
+    footer .f_top h2 {
+        padding: 36px 0 20px 0;
+    }
+    footer .f_top {
+        display: block;
+    }
+    footer .f_top .f_nav {
+        display: flex;
+    }
+    footer .f_top dl {
+        margin: 0;
+    }
+    footer .f_top dl:first-child {
+        margin-left: 0;
+    }
+    footer .f_top dl:nth-child(2) {
+        margin-left: 0;
+    }
+    footer .f_top dl:nth-child(3) {
+        margin-left: 0;
+    }
+    footer .f_top dl dt a {
+        font-size: 13px;
+        font-weight: 900;
+        margin-right: 18px;
+    }
+    footer .f_top dl dd {
+        display: none;
+    }
+    footer .f_info {
+        margin: 0;
+    }
+    footer .f_info ul {
+        flex-wrap: wrap;
+    }
+    footer .f_info ul li {
+        position: relative;
+        line-height: 1.5;
+    }
+    footer .f_info ul.company li::after {
+        position: absolute;
+        right: 13px;
+        top: 3px;
+        width: 1px;
+        height: 14px;
+        background-color: rgba(255, 255, 255, 0.4);
+        content: "";
+    }
+    footer .f_info ul li a {
+        font-weight: 900;
+        margin-right: 23px;
+    }
+    footer .f_info .info {
+        margin: 5px 0;
+    }
+    footer .f_info .info li {
+        margin-right: 19px;
+    }
+    footer .f_info .copyright {
+        font-size: 11px;
+        margin-top: 15px;
+        padding-bottom: 105px;
+    }
+    footer .wrapper {
+        position: relative;
+    }
+    footer h1 {
+        bottom: 36px;
+        font-size: 0;
+        line-height: 0;
+        width: 51px;
+        height: 25px;
+        background: url(../imges/f_logo.svg) no-repeat center center / contain;
+    }
+    footer .icons {
+        margin-bottom: 36px;
+        width: auto;
+        height: auto;
+    }
+    footer .icons a {
+        width: 21px;
+        height: 21px;
+        margin-left: 10px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    footer .icons a.ins {
+        width: 21px;
+        height: 21px;
+    }
+    footer .icons a.ytb {
+        width: 25px;
+        height: 17px;
+    }
+    footer .top {
+        right: 139px;
+        top: auto;
+        bottom: 34px;
+    }
+} /* footer media */
