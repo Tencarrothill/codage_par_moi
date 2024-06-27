@@ -1,3 +1,24 @@
 @import url(default.css);
 @import url(fonts.css);
 @import url(common.css);
+
+.visual ul li {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 870px;
+}
+.visual ul li.pop_bg1 {
+    background-image: url(../imges/visual_bg1.png);
+}
+.visual ul li.pop_bg2 {
+    background-image: url(../imges/visual_bg2.png);
+}
+.visual ul li.pop_bg3 {
+    background-image: url(../imges/visual_bg3.png);
+}
+.visual ul li h2 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.5;
+}
