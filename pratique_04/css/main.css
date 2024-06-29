@@ -21,4 +21,8 @@
     font-size: 80px;
     font-weight: 900;
     line-height: 1.5;
+    
+}
+.visual ul li h2 em {
+    background-color: #91AA51;
 }
