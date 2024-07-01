@@ -1,8 +1,8 @@
 $(document).ready(function(){
-    const swiper = new Swiper('.swiper', { /* 팝업을 감싼는 요소의 class명 */
+    const visual_swiper = new Swiper('.visual .swiper', { /* 팝업을 감싼는 요소의 class명 */
 
         autoplay: {  /* 팝업 자동 실행 */
-            delay: 2500,
+            delay: 25000,
             disableOnInteraction: true,
         },
     
@@ -19,9 +19,9 @@ $(document).ready(function(){
         
     
         navigation: {  /* 이전, 다음 버튼 */
-            nextEl: '.swiper-button-next',  /* 다음 버튼의 클래스명 */
-            prevEl: '.swiper-button-prev',  
+            nextEl: '.btn_next',  /* 다음 버튼의 클래스명 */
+            prevEl: '.btn_prev',  
         },
     
-    });
-})
+    });//visual_swiper
+})//document.ready

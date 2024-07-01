@@ -21,8 +21,38 @@
     font-size: 80px;
     font-weight: 900;
     line-height: 1.5;
+    padding-top: 255px;
     
 }
 .visual ul li h2 em {
     background-color: #91AA51;
+    padding: 0 30px;
+}
+.visual .btn_wrap {
+    position: absolute; /* swiper 기준 정렬. 여기선 안보임 */
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+}
+.visual .btn_wrap button {
+    font-size: 0;
+    line-height: 0;
+    width: 96px;
+    height: 20px;
+    position: relative;
+}
+.visual .btn_wrap button::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; /* button size 기준 */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+.visual .btn_wrap button.btn_prev::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='106' height='26' viewBox='0 0 106 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M103 23.5H7L27.5 3' stroke='%23DB4210' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
 }
