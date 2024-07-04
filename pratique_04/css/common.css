@@ -1,9 +1,9 @@
 html, body {
-    font-family: 'Montserrat';
+    font-family: "Montserrat", sans-serif;;
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0; /* 자간 */
-    line-height: 1.1; /* 배수 - 글자크기에 1.2배 */
+    letter-spacing: -0.03em; /* 자간 */
+    line-height: 1.2; /* 배수 - 글자크기에 1.2배 */
     color: #DB4210; /* 글자 색상 */
     word-break: keep-all; /* 단어별로 줄바꿈 */
     word-wrap: break-word; /* 만약 단어가 엄청 길면 강제 줄바꿈 실행 명령 */
@@ -12,6 +12,7 @@ html, body {
 /* 홈페이지 전체를 감싸는 요소 - 가로 스크롤 바가 생겼을 때 배경이 짤리는 현상을 막음 */
 #wrap {
     min-width: 1260px;
+    overflow: hidden;
 }
 .wrapper {
     width: 1260px;
@@ -21,22 +22,21 @@ html, body {
 하겠다는 선언임. */
 @media screen and (max-width:1300px){
     #wrap {
-        min-width: 1300px; 
+        min-width: 100%; 
     }
     .wrapper {
-        /* 너비는 1260px 유지 */
+        /* 너비가 빠져야함 */
+        width: auto;
         margin: 0 20px; /* 좌우에 20px씩 부여함 */
     }
 }/*media1300*/
+@media screen and (max-width:1024px) {
+    html, body {
+        font-size: 14px;
+    }
+}/*media 1024 */
 @media screen and (max-width:640px){ /*이 사이즈 이하부터 모바일 반응형 시작 */
     html, body {
         font-size: 13px;
     }
-    #wrap {
-        min-width: 100%;
-    }
-    .wrapper {
-        width: auto;
-    }
-    
 }/*media640*/
