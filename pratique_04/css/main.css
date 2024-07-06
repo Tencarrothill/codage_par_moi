@@ -190,8 +190,98 @@ header .gnb ul li:hover a {
         background-color: #91AA51;
         padding: 0 10px;
     }
-}
+} /* // visual media 475 */
 
+.signiture {
+    background-color: #F4764C;
+    color: #fff;
+    padding: 77px 0 144px 0;
+}
+.signiture .wrapper {
+    position: relative;
+}
+.signiture .tit {
+    float: left; /* 부유요소 */
+    margin-top: 23px;
+}
+.signiture .tit h2 {
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+.signiture .tit p {
+    font-size: 20px;
+    line-height: 1.1;
+}
+.signiture .list {
+    width: 1260px;
+    margin-left: 428px;
+}
+.signiture .list ul li {
+    width: 297px;
+}
+.signiture .list ul li a .photo {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0; /* 이미지 하단 여백 삭제 */
+}
+.signiture .list ul li a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 감싸는 요소 photo 영역에 이미지 꽉 채우기 */
+    transition: 0.3s;
+}
+.signiture .list ul li a:hover .photo img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.signiture .list ul li a h3 {
+    /* 1줄 제한 -- block요소여야 함. */
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 1.1;
+    margin: 13px 0 11px 0;
+}
+.signiture .list ul li a p {
+    /* 2즐 이상 제한 */
+    display: block;
+    line-height: 1.1;
+    height: 2.2em; /* 행간 x 줄수 */
+    overflow: hidden;    
+}
+.signiture .more {
+    position: absolute; /* wrppaer 기준 정렬 */
+    left: 0;
+    top: 124px;
+}
+.signiture .more a {
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    border: 1px solid #fff;
+    padding: 6px 63px 6px 12px;
+    position: relative; /* after 정렬 기준 */
+}
+.signiture .more a::after {
+    position: absolute; /* a 기준 정렬 */
+    right: 17px;
+    top: 12px;
+    width: 32px;
+    height: 6px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='34' height='8' viewBox='0 0 34 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 7.5H32L25.5 1' stroke='white'/%3E%3C/svg%3E%0A");
+    content: "";
+}
+.signiture .more a:hover {
+    background-color: #91AA51;
+    border-color: #91AA51;
+}
 
 footer {
     margin-top: 500px;

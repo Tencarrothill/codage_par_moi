@@ -24,6 +24,6 @@ $(document).ready(function(){
             },
         },
         loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
-    });//book_swiper
+    });//signiture_swiper
 
 })//document.ready
