@@ -254,7 +254,7 @@ header .gnb ul li:hover a {
     overflow: hidden;    
 }
 .signiture .more {
-    position: absolute; /* wrppaer 기준 정렬 */
+    position: absolute; /* wrapper 기준 정렬 */
     left: 0;
     top: 124px;
 }
@@ -281,6 +281,140 @@ header .gnb ul li:hover a {
 .signiture .more a:hover {
     background-color: #91AA51;
     border-color: #91AA51;
+}
+@media screen and (max-width:768px)  {
+    .signiture {
+        padding: 70px 0;
+    }
+    .signiture .tit {
+        float: none; /* 부유요소 취소 */
+        margin-top: 0;
+        margin: 0 0 37px 0;
+    }
+    .signiture .tit h2 {
+        font-size: 40px;
+    }
+    .signiture .tit p {
+        font-size: 18px;
+    }
+    .signiture .list {
+        width: auto;
+        margin-left: 0;
+    }
+    .signiture .list ul li {
+        width: 152px;
+    }
+    .signiture .list ul li a h3 {
+        /* 1줄 제한 해제 */
+        display: block;
+        white-space: wrap;
+        overflow: visible;
+        text-overflow: ellipsis;
+        /* 2즐 이상 제한 */
+        display: block;
+        line-height: 1.1;
+        height: 2.2em; /* 행간 x 줄수 */
+    }
+    .signiture .more {
+        position: relative; /* absolute 해제*/
+        left: auto;
+        top: auto;
+        display: flex;
+        justify-content: center; /* 중앙 정렬 */
+        margin-top: 35px;
+    }
+    .signiture .more a {
+        font-size: 13px;
+        padding: 5px 38px 5px 10px;        
+    }
+    .signiture .more a::after {
+        position: absolute; /* a 기준 정렬 */
+        right: 11px;
+        top: 9px;
+        width: 16px;
+        height: 4px;
+        background-image: url("data:image/svg+xml,%3Csvg width='19' height='6' viewBox='0 0 19 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.5H17.5L13 1' stroke='white' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    } 
+}/* signiture_media 768 */
+
+.location .wrapper {
+    /* position: relative;  */
+    /* button들의 before 정렬 기준 */
+}
+.location h2 {
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 134px 0 84px 0;
+}
+.location .list ul li {
+    width: 404px;
+}
+.location .list ul li a .photo {
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.location .list ul li a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Google Maps 스타일 주기 */
+.location .list ul li a {
+    position: relative; /* strong 정렬 기준 */
+}
+.location .list ul li a strong {    
+    display: block;
+    position: absolute; /* a 기준 정렬, after 정렬 기준 */
+    left: 12px;
+    bottom: 76px;
+    background-color: #91AA51;
+    color: #fff;
+    padding: 6px 28px 7px 7px;
+    line-height: 1;
+}
+.location .list ul li a strong::after {
+    position: absolute; /* strong 기준 정렬 */
+    right: 6px;
+    top: 6px;
+    width: 17px;
+    height: 17px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_14_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='17' height='17'%3E%3Crect width='17' height='17' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_14_28)'%3E%3Cpath d='M3.97756 14.1666C3.65149 14.1666 3.37926 14.0574 3.16086 13.839C2.94245 13.6206 2.83325 13.3483 2.83325 13.0223V3.97756C2.83325 3.65149 2.94245 3.37926 3.16086 3.16086C3.37926 2.94245 3.65149 2.83325 3.97756 2.83325H7.95503V3.54159H3.97756C3.86848 3.54159 3.76855 3.58698 3.67776 3.67776C3.58698 3.76855 3.54159 3.86848 3.54159 3.97756V13.0223C3.54159 13.1314 3.58698 13.2313 3.67776 13.3221C3.76855 13.4129 3.86848 13.4583 3.97756 13.4583H13.0223C13.1314 13.4583 13.2313 13.4129 13.3221 13.3221C13.4129 13.2313 13.4583 13.1314 13.4583 13.0223V9.0448H14.1666V13.0223C14.1666 13.3483 14.0574 13.6206 13.839 13.839C13.6206 14.0574 13.3483 14.1666 13.0223 14.1666H3.97756ZM6.89802 10.6031L6.3967 10.1018L12.9569 3.54159H9.91658V2.83325H14.1666V7.08325H13.4583V4.04291L6.89802 10.6031Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    content: "";
+}
+
+.location .list ul li a h3 {
+    font-weight: 900;
+    font-size: 22px;
+    margin: 16px 0;
+}
+.location .list ul li a p {
+    font-size: 22px;
+}
+.location .list .btn_wrap {
+    position: relative;
+}
+.location .list .btn_wrap button {
+    font-size: 0;
+    line-height: 0;       
+}
+.location .list .btn_wrap button.btn_prev::before {
+    position: absolute; /* wrapper 기준 정렬 */
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 36px;
+    height: 11px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='16' viewBox='0 0 46 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M43.5 13.5H7L18 2.5' stroke='%23DB4210' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    content: "";
 }
 
 footer {
