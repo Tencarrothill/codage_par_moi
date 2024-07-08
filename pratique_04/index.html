@@ -164,6 +164,8 @@
                                 </li>
                             </ul>
                         </div><!--swiper-->
+                        <!-- swiper 안에 overflow:hidden 이 있기 때문에 영역을 벗어날 경우, 보이지 않게 된다.
+                            따라서 이 경우엔 button을 swiper 밖에 배치해주어야 디자인한대로 구현 가능 -->
                         <div class="btn_wrap">
                             <button class="btn_prev">이전 팝업 보기</button>
                             <button class="btn_next">다음 팝업 보기</button>
@@ -172,7 +174,35 @@
                 </div><!--wrapper-->
             </section><!--location-->
         </main>
-        <footer></footer>
+        <footer>
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="f_info">
+                        <span>Work with us :<br>
+                            alora@bennettandclive.com</span>
+                        <span>CEO, Founder :<br>
+                                Levol du Bleu</span>
+                        <div class="copyright">ⓒ ALORA All Rights Reserved</div>
+                    </div><!--f_info-->
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#n">ABOUT US</a></li>
+                            <li><a href="#n">SERVICES</a></li>
+                            <li><a href="#n">OUR STORES</a></li>
+                            <li><a href="#n">CONTACT US</a></li>
+                        </ul>
+                        <div class="privacy">
+                            <span>Privacy Policy</span>
+                            <span>Legal Terms</span>
+                        </div><!--privacy-->
+                    </div><!--f_nav-->
+                </div><!--inner-->
+                <div class="f_logo"><img src="imges/f_logo.png" alt="alora"></div><!--f_logo-->
+                <div class="top">
+                    <button>GO<br>TO<br>TOP</button>
+                </div><!--top--> 
+            </div><!--wrapper-->
+        </footer>
     </div><!--wrap-->
 </body>
 </html>
