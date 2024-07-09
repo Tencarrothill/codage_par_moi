@@ -39,6 +39,11 @@ $(document).ready(function(){
             nextEl: '.location .btn_wrap .btn_next',
             prevEl: '.location .btn_wrap .btn_prev',
         },
-    });
+    }); //location swiper
+    $('footer .top button').on('click', function(){
+		$("html, body").animate({
+		  scrollTop : 100
+		}, 500);
+	});
 
 })//document.ready
