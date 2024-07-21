@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>바튀르 자동차 박물관</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1 class="logo"><a href="index.html">바튀르 자동차 박물관</a></h1>
+            <nav class="gnb">
+                <button class="gnb_open">메뉴열기</button>
+                <div class="gnb_wrap">
+                    <ul class="depth1">
+                        <li>
+                            <a href="#n">Company</a>
+                        </li>
+                        <li>
+                            <a href="#n">Exhibits</a>
+                            <ul class="depth2">
+                                <li><a href="#n">Vintage Cars</a></li>
+                                <li><a href="#n">60s Cars</a></li>
+                                <li><a href="#n">Futuristic cars</a></li>
+                                <li><a href="#n">Exhibition Inquiry</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n">News</a>
+                            <ul class="depth2">
+                                <li><a href="#n">News</a></li>
+                                <li><a href="#n">Notice</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n">Contact Us</a>
+                        </li>
+                    </ul>
+                </div><!--gnb_wrap-->
+                <button class="gnb_close">메뉴닫기</button>
+            </nav>
+            <div class="tnb">
+                <a class="btn_open">검색 페이지 이동</a>
+                <div class="search">
+                    <form> <!-- form & fieldset은 개발자가 수정/삭제 할 수 있음.
+                                따라서 절대로 선택자로써 쓰면 안됨.-->
+                        <fieldset>
+                            <div class="search_box">
+                                <legend>검색어 입력</legend>
+                                <label for="keyword">검색어</label>
+                                <input type="text" id="keyword" placeholder="검색">
+                                <input type="submit">
+                            </div><!--search_box-->
+                        </fieldset>
+                    </form>
+                </div><!--search-->
+                <div class="link"><a href="#n">CAREERS</a></div><!--link-->
+            </div><!--tnb-->
+        </header>
+        <main class="container">
+            <section class="visual"></section>
+            <section class="exhibit"></section>
+            <section class="slogan"></section>
+            <section class="donor"></section>
+            <section class="news"></section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
