@@ -3,63 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!--//swiper-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>바튀르 자동차 박물관</title>
 </head>
 <body>
     <div class="wrap">
         <header>
-            <h1 class="logo"><a href="index.html">바튀르 자동차 박물관</a></h1>
-            <nav class="gnb">
-                <button class="gnb_open">메뉴열기</button>
-                <div class="gnb_wrap">
-                    <ul class="depth1">
-                        <li>
-                            <a href="#n">Company</a>
-                        </li>
-                        <li>
-                            <a href="#n">Exhibits</a>
-                            <ul class="depth2">
-                                <li><a href="#n">Vintage Cars</a></li>
-                                <li><a href="#n">60s Cars</a></li>
-                                <li><a href="#n">Futuristic cars</a></li>
-                                <li><a href="#n">Exhibition Inquiry</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#n">News</a>
-                            <ul class="depth2">
-                                <li><a href="#n">News</a></li>
-                                <li><a href="#n">Notice</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#n">Contact Us</a>
-                        </li>
-                    </ul>
-                </div><!--gnb_wrap-->
-                <button class="gnb_close">메뉴닫기</button>
-            </nav>
-            <div class="tnb">
-                <a class="btn_open">검색 페이지 이동</a>
-                <div class="search">
-                    <form> <!-- form & fieldset은 개발자가 수정/삭제 할 수 있음.
-                                따라서 절대로 선택자로써 쓰면 안됨.-->
-                        <fieldset>
-                            <div class="search_box">
-                                <legend>검색어 입력</legend>
-                                <label for="keyword">검색어</label>
-                                <input type="text" id="keyword" placeholder="검색">
-                                <input type="submit">
-                            </div><!--search_box-->
-                        </fieldset>
-                    </form>
-                </div><!--search-->
-                <div class="link"><a href="#n">CAREERS</a></div><!--link-->
-            </div><!--tnb-->
+            <div class="wrapper">
+                <h1 class="logo"><a href="index.html">바튀르 자동차 박물관</a></h1>
+                <nav class="gnb">
+                    <button class="gnb_open">메뉴열기</button>
+                    <div class="gnb_wrap">
+                        <ul class="depth1">
+                            <li>
+                                <a href="#n">Company</a>
+                            </li>
+                            <li>
+                                <a href="#n">Exhibits</a>
+                                <ul class="depth2">
+                                    <li><a href="#n">Vintage Cars</a></li>
+                                    <li><a href="#n">60s Cars</a></li>
+                                    <li><a href="#n">Futuristic cars</a></li>
+                                    <li><a href="#n">Exhibition Inquiry</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n">News</a>
+                                <ul class="depth2">
+                                    <li><a href="#n">News</a></li>
+                                    <li><a href="#n">Notice</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div><!--gnb_wrap-->
+                    <button class="gnb_close">메뉴닫기</button>
+                </nav>
+                <div class="tnb">
+                    <a class="btn_open">검색 페이지 이동</a>
+                    <div class="search">
+                        <form> <!-- form & fieldset은 개발자가 수정/삭제 할 수 있음.
+                                    따라서 절대로 선택자로써 쓰면 안됨.-->
+                            <fieldset>
+                                <div class="search_box">
+                                    <legend>검색어 입력</legend>
+                                    <label for="keyword">검색어</label>
+                                    <input type="text" id="keyword" placeholder="검색">
+                                    <input type="submit">
+                                </div><!--search_box-->
+                            </fieldset>
+                        </form>
+                    </div><!--search-->
+                    <div class="link"><a href="#n">CAREERS</a></div><!--link-->
+                </div><!--tnb-->
+            </div><!--wrapper-->
         </header>
         <main class="container">
-            <section class="visual"></section>
+            <section class="visual">
+                <h2>visual swiper</h2> <!-- 이 section 영역을 대표하는 제목. 디자인상 존재하지 않음.
+                (css에서 display:none)-->
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide bg1">
+                            <div class="wrapper">
+                                <h3>Find Your Dream Car<br>at Voiture</h3>
+                                <p>바튀르에서 드림카를 발견하세요</p>
+                            </div><!--wrapper-->
+                        </li>
+                        <li class="swiper-slide bg2">
+                            <div class="wrapper">
+                                <h3>It all starts<br>with a dream</h3>
+                                <p>바튀르가 꿈의 공간을 제공합니다</p>
+                            </div><!--wrapper-->
+                        </li>
+                        <li class="swiper-slide bg3">
+                            <div class="wrapper">
+                                <h3>A must-stop<br>if you truly love car</h3>
+                                <p>자동차를 사랑하는 모든 이를 환영합니다</p>
+                            </div><!--wrapper-->
+                        </li>
+                        <li class="swiper-slide bg4">
+                            <div class="wrapper">
+                                <h3>Just looking at a pretty car<br>makes you more discerning</h3>
+                                <p>예쁜 차를 보는 것만으로도 당신의 안목이 높아집니다</p>
+                            </div><!--wrapper-->
+                        </li>
+                    </ul>
+                    <div class="btn_wrap">
+                        <button class="btn_prev">이전 팝업 보기</button>
+                        <button class="btn_pause">일시정지</button>
+                        <button class="btn_play">재생</button>
+                        <button class="btn_next">다음 팝업 보기</button>
+                    </div><!--btn_wrap-->
+                </div><!--swiper-->
+                <div class="v_slogan"><img src="imges/v_slogan.svg" alt="Voiture Automobile Museum Since 1998"></div>
+            </section>
             <section class="exhibit"></section>
             <section class="slogan"></section>
             <section class="donor"></section>
