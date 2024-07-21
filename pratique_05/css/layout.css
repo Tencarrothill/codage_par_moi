@@ -8,10 +8,11 @@ header {
     z-index: 100;
     color: #fff;
 }
-header .wrapper {
+header .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 20px;
 }
 header .logo a {
     display: block;
@@ -42,22 +43,19 @@ header .gnb .gnb_wrap ul.depth1 {
     display: flex;
     text-align: center;
 }
-header .gnb ul.depth1>li {
-    width: 192px;
-}
 header .gnb ul.depth1>li>a {
     display: block;
     font-size: 25px;
     font-weight: 500;
-    padding: 0 52px 0 43px;
+    width: 100%;
+    padding: 37px 52px 34px 43px;
     position: relative; /* depth2 - a 정렬 기준 */
 }
-
 header .gnb .gnb_wrap ul.depth1>li:has(.depth2)>a::after { /* has 가상 선택자는 하위 요소 중에 depth2 라는 클래스명을 가진 요소가 있는지 계산하는 놈이다.
     높은 버전 브라우저에서만 지원됨. */
     position: absolute; /* depth1 - a 기준 정렬 */
-    right: 10px;
-    top: 10px;
+    right: 30px;
+    top: 49px;
     width: 9px;
     height: 9px;
     background-position: center center ;
@@ -74,6 +72,52 @@ header .tnb {
 }
 header .tnb .search {
     width: 140px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 17px;
+    margin-right: 13px;
+}
+header .tnb .search .search_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px 16px;
+}
+header .tnb .search .search_box label {
+    display: none;
+}
+header .tnb .search .search_box input[type="text"] {
+    width: calc(100% - 17px);
+    height: 17px;
+    border: 0;
+    background-color: transparent;
+    outline: 0; /* focus 될 때 테두리 */
+    margin-top: 4px;
+}
+header .tnb .search .search_box input[type="submit"] {
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    line-height: 0;
+    background-color: transparent;
+    border: 0;
+    /* 종료 태그가 없는 input은 before/after 선택자 쓸 수 없음 */
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.96' height='19.371' viewBox='0 0 17.96 19.371'%3E%3Cg id='search-glass' transform='translate(-1619.572 -36.721)'%3E%3Cg id='타원_1' data-name='타원 1' transform='translate(1619.572 43.955) rotate(-34)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='2'%3E%3Cellipse cx='6.469' cy='6.469' rx='6.469' ry='6.469' stroke='none'/%3E%3Cellipse cx='6.469' cy='6.469' rx='5.469' ry='5.469' fill='none'/%3E%3C/g%3E%3Cline id='선_1' data-name='선 1' x2='3.728' y2='4.324' transform='translate(1632.169 50.357)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+ .search .search_box input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+ .btn_open {
+    display: none;
+}
+header .tnb .link a {
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0;
+    width: 123px;
     height: 30px;
     border: 2px solid #fff;
     border-radius: 17px;
