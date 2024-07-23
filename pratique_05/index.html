@@ -15,18 +15,21 @@
 </head>
 <body>
     <div class="wrap">
-        <header>
+        <!-- 스크롤을 내려서 header가 고정되게 할 것임. class=fixed 부여.
+            pc ver. menu ver. hover 시, class=menu_over 부여.
+            mobile ver. 에서 menu open click시, class=mobile_open 부여. -->
+        <header class="fixed">
             <div class="inner">
                 <h1 class="logo"><a href="index.html">바튀르 자동차 박물관</a></h1>
                 <nav class="gnb">
                     <button class="gnb_open">메뉴열기</button>
                     <div class="gnb_wrap">
                         <ul class="depth1">
-                            <li>
-                                <a href="#n">Company</a>
+                            <li class="menu_over">
+                                <a href="#n"><span>Company</span></a>
                             </li>
-                            <li>
-                                <a href="#n">Exhibits</a>
+                            <li class="on">
+                                <a href="#n"><span>Exhibits</span></a>
                                 <ul class="depth2">
                                     <li><a href="#n">Vintage Cars</a></li>
                                     <li><a href="#n">60s Cars</a></li>
@@ -35,14 +38,14 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#n">News</a>
+                                <a href="#n"><span>News</span></a>
                                 <ul class="depth2">
                                     <li><a href="#n">News</a></li>
                                     <li><a href="#n">Notice</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#n">Contact Us</a>
+                                <a href="#n"><span>Contact Us</span></a>
                             </li>
                         </ul>
                     </div><!--gnb_wrap-->
