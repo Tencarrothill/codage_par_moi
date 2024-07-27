@@ -75,7 +75,7 @@ $('document').ready(function(){
         e.preventDefault(); /* a 태그의 href를 작동 시키지 않음 */
         $(this).parent().toggleClass('on')
         }
-    })
+    }) // 모바일 메뉴 클릭 
 
 
 }) //document.ready
