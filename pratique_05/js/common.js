@@ -59,11 +59,13 @@ $('document').ready(function(){
     $('header .gnb .gnb_open').on('click', function(){
         if(pc_mobile == 'mobile'){ //mobile ver. 일 때만 실행하겠다
             $('header').addClass('mobile_open')
+            $("html, body").css({overflow : "hidden", height : $(window).height()}).bind("scroll touchmove mousewheel", function(e){e.preventDefault();e.stopPropagation();return false;},function(){passive:false});
         }
     })
     $('header .gnb .gnb_close').on('click', function(){
         if(pc_mobile == 'mobile'){ //mobile ver. 일 때만 실행하겠다
             $('header').removeClass('mobile_open')
+            $("html, body").css({overflow : "visible", height : "auto"}).unbind('scroll touchmove mousewheel');
         }
     }) // header가 모바일이냐 피시냐에 따라 클래스를 주냐 마냐
 
@@ -76,6 +78,8 @@ $('document').ready(function(){
         $(this).parent().toggleClass('on')
         }
     }) // 모바일 메뉴 클릭 
+    
+    
 
 
 }) //document.ready

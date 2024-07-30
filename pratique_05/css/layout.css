@@ -392,3 +392,7 @@ header.fixed {
     } /* //header class="mobile_open" */
 } /* //media 1024 */
 @media screen and (max-width:768px) {} /* //media 768 */
+
+footer {
+    margin: 200px 0 0 0;
+}

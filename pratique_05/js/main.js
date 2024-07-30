@@ -31,4 +31,42 @@ $('document').ready(function(){
         $(this).hide()
         $('.visual .btn_wrap button.btn_pause').show()
     })//btn_play
+
+    /* 전시 홍보 섹션 */
+    const exh01_swiper = new Swiper('.exhibit .tab .exh01 .swiper', {
+        slidesPerView: "auto",
+        spaceBetween: 16,
+        breakpoints: {
+            640: {
+                spaceBetween: 30, 
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    }); //exh01
+    const exh02_swiper = new Swiper('.exhibit .tab .exh02 .swiper', {
+        slidesPerView: "auto",
+        spaceBetween: 16,
+        breakpoints: {
+            640: {
+                spaceBetween: 30, 
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    }); //exh02
 })//document
