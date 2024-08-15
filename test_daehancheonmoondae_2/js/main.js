@@ -22,23 +22,26 @@ $('documnet').ready(function(){
         $('.layer_popup').hide()
     })
 
-
-    /* visual_popup  
-        idx 팝업의 번호
-        1>2>3> 1>2>3 번호가 무한으로 돌아야 함.
-    */
-    let idx = 1 //idx = index
-
+    /* visual_popup 가로로 확장 시킨 ul 자체를 밀면서 넘기는 방식 */
+    let idx = 1
+    let obj_left = 0
+    
     setInterval(function(){
         if(idx < 3){
-            idx++ //1더하기
+            idx++
         }else{
             idx = 1
         }
-        console.log(idx)
-        $('.popup ul li').removeClass('active')
-        $('.popup ul li').eq(idx - 1).addClass('active')
-        //eq -> nth child와 비슷한 녀석. 0번부터 세기 때문에 0번이 1, 1번이 2 이런식임.
-    }, 3000)//3초
+        /* 
+            idx = 1 --- 0
+                = 2 --- 1200
+                = 3 --- 2400
+        */ 
+        obj_left = -(idx-1)*1200
+        console.log(obj_left)
 
+        $('.popup ul').animate({
+            left: obj_left
+        }, 500) //0.5s
+    }, 3000)
 })

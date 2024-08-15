@@ -67,19 +67,14 @@ header .gnb .depth1>li.over .depth2 {
 .popup {
     height: 300px;
     overflow: hidden;
-    position: relative;
+    position: relative; /* ul 정렬 기준 */
 }
-.popup ul li {
+.popup ul {
+    width: 3600px;
+    display: flex;
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 1;
-    opacity: 0.5;
-    transition: 0.3s;
-}
-.popup ul li.active {
-    z-index: 2;
-    opacity: 1;
 }
 .container {
     display: flex;
