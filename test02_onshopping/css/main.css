@@ -47,13 +47,134 @@ header .gnb .depth1>li:hover>a {
     color: #5e1742;
 }
 header .gnb .depth2 {
-    display: block;
+    display: none;
     position: absolute; /* depth1 기준 정렬 */
     left: 0;
     top: 100px;
     width: 100%;
-    /* background-color: #5e1742; */
 }
 header .gnb .depth2>li>a {
+    display: block;
+    color: #fff;
+    background-color: #5e1742;
+    line-height: 50px;
+}
+header .gnb .depth2>li:hover>a {
+    background-color: #c9463c;
+}
+header .gnb .depth1>li.over .depth2 {
+    display: block;
+}
 
+.popup {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.popup ul li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.popup ul li.active {
+    z-index: 2;
+    opacity: 1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    padding-top: 20px;
+}
+.news {
+    width: 400px;
+    position: relative; /* detail 기준 정렬 */
+}
+.news .tab {
+    display: flex;
+}
+.news .tab>li>button {
+    background-color: #ededed;
+    font-size: 18px;
+    border: 0;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.news .tab>li.active>button {
+    background-color: #c9463c;
+    color: #fff;
+    font-weight: 700;
+}
+.news .detail {
+    display: none;
+    position: absolute; /* news 기준 정렬. 똑같은 위치에 들어가야 하기 때문에 앱솔 줌 */
+    left: 0;
+    top: 50px;
+    width: 100%;
+}
+.news .tab>li.active .detail {
+    display: block;
+}
+.news .notice>.detail ul li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0 ;
+}
+.news .notice>.detail ul li a:hover {
+    color: #5e1742;
+    text-decoration: underline;
+}
+.news .gallery ul{
+    display: flex;
+    justify-content: space-around;
+}
+.banner {
+    width: 380px;
+    background-color: #1d1d1d;
+}
+.link {
+    width: 380px;
+    background-color: #5e1742;
+}
+.layer_popup .inner {
+    display: none;
+    width: 500px;
+    background-color: #5e1742;
+    position: absolute;
+    left: calc(50% - 250px); /* 너비의 반 값 */
+    top: 200px;
+    z-index: 200;
+    color: #fff;
+    padding: 30px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.layer_popup .inner h2 {
+    font-size: 25px;
+}
+.layer_popup .inner p {
+    font-size: 16px;
+    letter-spacing: -0.05em;
+    margin: 20px 0;
+}
+.layer_popup .inner button {
+    background-color: #fff;
+    color: #c9463c;
+    font-size: 20px;
+    border: 0;
+    padding: 7px 13px;
+}
+footer {
+    height: 100px;
+    background-color: #ededed;
+    margin-top: 30px;
+}
+footer .f_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
 }

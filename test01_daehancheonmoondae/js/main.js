@@ -1,10 +1,10 @@
-$('documnet').ready(function(){
+$('document').ready(function(){
     $('header .gnb .depth1>li').on('mouseenter focusin', function(){
         $('header .gnb .depth1>li').removeClass('over')
         $(this).addClass('over')
     })
 
-    $('documnet').ready(function(){
+    $('document').ready(function(){
         $('header .gnb').on('mouseleave', function(){
             $('header .gnb .depth1>li').removeClass('over')
         })
@@ -41,4 +41,4 @@ $('documnet').ready(function(){
         //eq -> nth child와 비슷한 녀석. 0번부터 세기 때문에 0번이 1, 1번이 2 이런식임.
     }, 3000)//3초
 
-})
+})//document
