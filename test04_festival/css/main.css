@@ -21,6 +21,8 @@ html, body {
 
 header {
     text-align: center;
+    position: relative;
+    z-index: 100;
 }
 header .logo {
     margin-bottom: 20px;
@@ -124,7 +126,7 @@ header .gnb .depth1>li.over>.depth2 {
     left: 300px;
     top: 300px;
     width: 500px;
-    z-index: 100;
+    z-index: 200;
     padding: 20px 30px;
 }
 .layer_popup h2 {
