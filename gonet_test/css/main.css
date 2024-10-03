@@ -1,0 +1,110 @@
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+
+.myswiper {
+    overflow: hidden;
+    margin: 100px 0;
+}
+.myswiper ul li {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 30px 30px 91px 30px;
+    width: 360px;
+}
+.myswiper ul li .photo {
+    font-size: 0;
+    line-height: 0;
+    margin-bottom: 20px;
+}
+.myswiper ul li .photo img {
+    width: 100%;
+    object-fit: cover;
+}
+.myswiper ul li .txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myswiper ul li .txt strong {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+    color: #222;
+}
+.myswiper ul li .txt a {
+    position: relative;
+    padding-right: 19px;
+    white-space: nowrap;
+}
+.myswiper ul li .txt a::after {
+    position: absolute;
+    right: 0;
+    top: 5.5px;
+    width: 7px;
+    height: 12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='5' height='9' viewBox='0 0 5 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-0.00488281 7.87988L3.20312 4.74512L-0.00488281 1.625L0.874023 0.731445L5.00488 4.74512L0.874023 8.77344L-0.00488281 7.87988Z' fill='%23555555'/%3E%3C/svg%3E%0A");
+    content: "";
+}
+.btn_wrap {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+}
+.btn_wrap button::before {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: -525px;
+    width: 47px;
+    height: 47px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+.btn_wrap button.prev::before {
+    left: -60px;
+    background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='23.5' cy='23.5' r='23' fill='white' stroke='%23EDEDED'/%3E%3Cpath opacity='0.5' d='M18 23.0954L26.0954 31.1907L28 29.2861L21.8039 23.09L28 16.8939L26.0954 15L18 23.0954Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+}
+.btn_wrap button.prev:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='23.5' cy='23.5' r='23.5' transform='matrix(1 -8.74228e-08 -8.74228e-08 -1 0 47)' fill='%2300AFA2'/%3E%3Cpath d='M18 24.0953L26.0954 15.9999L28 17.9046L21.8039 24.1007L28 30.2968L26.0954 32.1907L18 24.0953Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.btn_wrap button.next::before {
+    left: auto;
+    right: -60px;
+    background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='23.5' cy='23.5' r='23' transform='matrix(-1 0 0 1 47 0)' fill='white' stroke='%23EDEDED'/%3E%3Cpath opacity='0.5' d='M29 23.0954L20.9046 31.1907L19 29.2861L25.1961 23.09L19 16.8939L20.9046 15L29 23.0954Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+}
+.btn_wrap button.next:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='23.5' cy='23.5' r='23.5' transform='rotate(-180 23.5 23.5)' fill='%2300AFA2'/%3E%3Cpath d='M29 24.0953L20.9046 15.9999L19 17.9046L25.1961 24.1007L19 30.2968L20.9046 32.1907L29 24.0953Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+@media screen and (max-width:1300px) {
+    .myswiper ul li .txt strong {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .myswiper ul li .txt strong {
+        font-size: 16px;
+    }
+    .btn_wrap button::before {
+        top: -765px;
+    }
+}
+@media screen and (max-width:640px) {
+    .myswiper ul {
+        display: block;
+        transform: translate3d(0, 0, 0) !important;
+    }
+    .myswiper ul li {
+        margin-bottom: 20px;
+    }
+    .btn_wrap {
+        display: none;
+    }
+}
