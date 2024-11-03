@@ -1,0 +1,24 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": null,
+        },
+        {
+            "format": "compressed",
+            "extensionName": "min.css",
+            "savePath": null,
+        }
+    ],
+    "editor.accessibilitySupport": "off",
+    "liveSassCompile.settings.includeItems": [],
+    "liveSassCompile.settings.showAnnouncements": false,
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "[scss]": {
+        "editor.defaultFormatter": null
+    },
+    "livesasscomile.settings.autoprefix": [
+
+    ]
+}

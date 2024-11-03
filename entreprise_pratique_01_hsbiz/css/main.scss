@@ -1,0 +1,21 @@
+@import "__fonts.scss";
+@import "__common.scss";
+@import "__default.scss";
+
+.business-list {
+    margin-top: 200px;
+    .list-item .list-btn {
+        .list-step {
+            text-align: left;
+            .step {
+                font-size: 15px;
+            }
+        }
+        .list-tit {
+            display: block;
+            font-size: 24px;
+            font-weight: 900;
+            text-align: left;
+        }
+    }
+}
