@@ -114,15 +114,43 @@ fieldset {
 .business-list {
   margin-top: 200px;
 }
+.business-list .list-item .list-btn {
+  border: 1px solid #eaebef;
+  border-radius: 5px;
+  padding: 30px;
+}
 .business-list .list-item .list-btn .list-step {
   text-align: left;
+  margin-bottom: 15px;
 }
 .business-list .list-item .list-btn .list-step .step {
   font-size: 15px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.business-list .list-item .list-btn .list-step .step1 {
+  color: #226ED3;
+  background-color: #E2F1FF;
+}
+.business-list .list-item .list-btn .list-step .step2 {
+  color: #DE5C35;
+  background-color: #FFEBE5;
+}
+.business-list .list-item .list-btn .list-step .step3 {
+  color: #008515;
+  background-color: #DFF6D9;
 }
 .business-list .list-item .list-btn .list-tit {
   display: block;
+  color: #1d1d1d;
   font-size: 24px;
   font-weight: 900;
+  text-align: left;
+}
+.business-list .list-item .list-btn .num {
+  display: block;
+  border-top: 1px solid #efefef;
+  padding-top: 15px;
+  margin-top: 15px;
   text-align: left;
 }/*# sourceMappingURL=main.css.map */
