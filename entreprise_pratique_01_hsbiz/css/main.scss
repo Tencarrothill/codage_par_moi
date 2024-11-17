@@ -2,8 +2,26 @@
 @import "__common.scss";
 @import "__default.scss";
 
-.business-list {border-bottom: 1px solid #d9d9d9; padding: 30px 0;
-    margin-top: 200px; display: flex; flex-wrap: wrap; justify-content: space-between;
+.sign-up-order {display: flex; justify-content: space-between; align-items: center; margin-top: 100px; border: 1px solid #ddd; border-radius: 100px; min-height: 100px;
+    @media(max-width: 1024px){min-height: 90px;}
+    @media(max-width: 768px){min-height: 81px;}
+    @media(max-width: 640px){display: block; border-radius: 10px; min-height: auto;}
+    .sign-up-step {color: #1d1d1d; padding: 10px 40px; font-size: 24px;
+        @media(max-width: 1024px){font-size: 21px; padding: 10px 30px;}
+        @media(max-width: 768px){font-size: 18px; padding: 9px 27px;}
+        @media(max-width: 640px){display: flex; justify-content: center; align-items: center; margin: 0 10px;}
+        @media(max-width: 490px){font-size: 16px;}
+        &.current {color: #fff; background-color: #A9D6E0; border-radius: 100px;
+            @media(max-width: 640px){border-radius: 10px;}
+        }
+    }
+    .which-step {display: block; color: #226ED3; font-size: 15px; font-weight: 900;
+        @media(max-width: 1024px){font-size: 14px;}
+        @media(max-width: 640px){margin-right: 15px;}
+        @media(max-width: 490px){font-size: 13px;}
+    }
+}
+.business-list {border-bottom: 1px solid #d9d9d9; padding: 30px 0; display: flex; flex-wrap: wrap; justify-content: space-between;
     .list-item .list-btn {
         border: 1px solid #eaebef;
         border-radius: 5px;
