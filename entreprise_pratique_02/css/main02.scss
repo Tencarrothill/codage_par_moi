@@ -1,0 +1,25 @@
+@import "__fonts.scss";
+@import "__common.scss";
+@import "__default.scss";
+
+.cn-tour-sns-event {
+    .tit {display: block;color: #222;font-size: 40px;font-weight: 700;line-height: 1.3;letter-spacing: -0.05rem;margin-bottom: 40px;text-align: center;
+        b {color: #00A499;font-weight: 700;}
+        @media(max-width: 768px){font-size: 36px;margin-bottom: 29px;}
+        @media(max-width: 540px){font-size: 29px;margin-bottom: 22px;}
+    }
+    .main-visual {position: relative;width: 100%; height: 570px;
+        @media(max-width: 1455px){height: 39.2vw;}
+        @media(max-width: 768px){height: auto;}
+        
+        .thm-box {height: 100%;width: 100%;
+            
+            @media(max-width: 1455px){padding: 0;display: flex;align-items: flex-end;}
+        }
+        picture {
+            @media(max-width: 768px){width: 100%;height: 100%;}
+        }
+        img {width: 100%;height: 100%;object-fit: contain;}
+    }
+    
+}

@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url(../fonts/Pretendard-Regular.woff2) format("woff2"), url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  font-display: swap;
+  src: local("Pretendard Black"), url(../fonts/Pretendard-Black.woff2) format("woff2"), url(../fonts/Pretendard-Black.woff) format("woff");
+}
+html, body {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.4;
+  color: #3d3d3d;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+/* 홈페이지의 넓이 제한, 가운데 정렬 기능을 수행함 .*/
+/* 홈페이지 전체를 감싸는 요소 - 가로 스크롤 바가 생겼을 때 배경이 짤리는 현상을 막음 */
+#wrap {
+  min-width: 1260px;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 1260px;
+  margin: 0 auto; /* 가운데 정렬 명령 */
+}
+
+/* 1260px 나의 wrapper의 사이즈에 좌우 여백 20px씩 더한 사이즈가 1300px임. 이 사이즈부터 반응형을
+하겠다는 선언임. */
+@media screen and (max-width: 1300px) {
+  #wrap {
+    min-width: 100%;
+  }
+  .wrapper {
+    /* 너비가 빠져야함 */
+    width: auto;
+    margin: 0 20px; /* 좌우에 20px씩 부여함 */
+  }
+} /*media1300*/
+@media screen and (max-width: 1024px) {
+  html, body {
+    font-size: 15px;
+  }
+} /*media 1024 */
+@media screen and (max-width: 640px) { /*이 사이즈 이하부터 모바일 반응형 시작 */
+  html, body {
+    font-size: 14px;
+  }
+} /*media640*/
+/* default.css :  브라우저가 태그에게 준 스타일을 모두 삭제하고 내가 준 스타일만 적용되게 함 */
+* { /* 와이드카드. 모든 태그를 지칭할 수 있음. 상속이 안되는 속성을 적용시킴. */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* li 앞에 구분점 삭제 명령 */
+li {
+  list-style: none;
+}
+
+/* 글자의 크기와 두께를 변화시킴 - 브라우저가 주는 스타일 제거 */
+h1, h2, h3, h4, h5, h6, strong {
+  font-size: inherit; /* html 또는 body(브라우저 별로 상이하기 때문에 둘 다 씀)에 선언된 스타일로 상속받음 */
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none; /* 밑줄 삭제 */
+}
+
+img { /* img tag를 a tag로 감싸면 일부 브라우저에서 파란색 테두리가 생기기 때문에 부여하는 명령 */
+  border: 0;
+}
+
+em, address { /* 글자 기울임꼴 삭제 */
+  font-style: normal;
+}
+
+button { /* 버튼태그는 글자의 스타일을 상속받지 않음. 버튼은 통태그(아무것도 상속 받지 않는 태그)임. */
+  background-color: transparent; /* 투명 명령 */
+  border: 0; /* 테두리 삭제 명령 */
+  cursor: pointer;
+}
+
+/* form tag가 문자 스타일 비상속 받음. 받게해줘야함 */
+input, select, textarea, button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
+legend {
+  display: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+.cn-tour-sns-event .tit {
+  display: block;
+  color: #222;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.05rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.cn-tour-sns-event .tit b {
+  color: #00A499;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .cn-tour-sns-event .tit {
+    font-size: 36px;
+    margin-bottom: 29px;
+  }
+}
+@media (max-width: 540px) {
+  .cn-tour-sns-event .tit {
+    font-size: 29px;
+    margin-bottom: 22px;
+  }
+}
+.cn-tour-sns-event .main-visual {
+  position: relative;
+  width: 100%;
+  height: 570px;
+}
+@media (max-width: 1455px) {
+  .cn-tour-sns-event .main-visual {
+    height: 39.2vw;
+  }
+}
+@media (max-width: 768px) {
+  .cn-tour-sns-event .main-visual {
+    height: auto;
+  }
+}
+.cn-tour-sns-event .main-visual .thm-box {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1455px) {
+  .cn-tour-sns-event .main-visual .thm-box {
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .cn-tour-sns-event .main-visual picture {
+    width: 100%;
+    height: 100%;
+  }
+}
+.cn-tour-sns-event .main-visual img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=main02.css.map */
