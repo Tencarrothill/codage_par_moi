@@ -3,10 +3,414 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+
     <title>입력폼 연습</title>
 </head>
 <body>
-    <h2>안녕하세요</h2>
+    <div class="cn-tour-sns-event">
+
+        <div class="main-visual">
+            <div class="thm-box">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="/images/kor/sub06/snsEvent-visual-m.png">
+                    <img src="/images/kor/sub06/snsevent-deco.png" alt="충남관광 홈페이지 오픈 기념 SNS 공유 이벤트. 충남관광 홈페이지가 새롭게 오픈했습니다! 이를 기념해 총 200명에게 스타벅스 기프트카드(1만원권)을 드리는 이벤트를 진행합니다. 충남도민 및 충남 여행 예정자 누구나 쉽게 참여할 수 있으니, 많은 관심과 참여 부탁드립니다. 이벤트 기간. 2025년 2월 20일부터 3월 1일 18:00까지">
+                </picture>
+            </div>
+        </div>
+    
+        <div class="how-to-join">
+            <strong class="tit">이벤트 <b>참여방법</b></strong>
+            <div class="inner">
+                <div class="wrapper">
+                    <div class="thm-box">
+                        <img src="/images/kor/sub06/how-to-join01.png" alt="">
+                    </div>
+                    <div class="thm-box">
+                        <img src="/images/kor/sub06/how-to-join02.png" alt="">
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="thm-box">
+                        <img src="/images/kor/sub06/how-to-join03.png" alt="">
+                    </div>
+                    <div class="thm-box">
+                        <img src="/images/kor/sub06/how-to-join04.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="privacy-wrap type1">
+            <h2 class="h2">
+                <span class="gubun point">필수</span>
+                개인정보 수집 및 이용에 관한 동의
+            </h2>
+            <div class="ui_subscription--form">
+                <div class="inner">
+                    <div class="ui_text--box">
+                        <div class="box-text__scroll" tabindex="0">
+                            <p class="p">충청남도 관관 홈페이지(이하 충남관광)에서는 이벤트 경품 발송을 위해 아래와 같이 개인정보를 수집ㆍ이용하고자 합니다.
+                                내용을 자세히 읽으신 후 동의 여부를 결정하여 주세요.<br><br>
+    
+                                수집하는 자: 충청남도 관광진흥과<br><br>
+                                개인정보 수집 및 이용 목적: 이벤트 참여자 확인 및 추첨<br>
+                                수집하는 개인정보 항목: 이름, 연락처<br>
+                                개인정보 보유 및 이용 기간: 경품 발송 후 즉시 파기<br><br>
+                            
+                                ※ 귀하께서는 동의하지 않을 권리가 있습니다. 동의하지 않을 경우 이벤트 참여에서 제외됨을 알려드립니다.<br>
+                                개인정보 수집과 이용에 동의하시나요?</p>
+                        </div>
+                        <div class="ui_radio--custom"> 
+                            <div class="inquiry--btn">
+                                <div class="inblock checkbox-box">
+                                    <label class="radio-inline" for="agree_confirm_1_1">
+                                        <span class="gubun point">필수</span>
+                                        <input type="checkbox" id="agree_confirm_1_1" name="ch_01_01" title="동의합니다."> 동의합니다.
+                                        <span class="chk_ball"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="h2">
+                <span class="gubun point">필수</span>
+                개인정보 취급 위탁에 대한 동의
+            </h2>
+            <div class="ui_subscription--form">
+                <div class="inner">
+                    <div class="ui_text--box">
+                        <div class="box-text__scroll" tabindex="0">
+                            <p class="p">기프티콘 발송 제공을 위해 개인정보 취급 위탁 동의를 받고자 합니다. 아래 보기에서 동의 여부를 선택해 주세요.<br><br>
+    
+                                수탁자: (주)지오넷<br>
+                                개인정보 수집 및 이용 목적: 이벤트 참여자 경품발송 (기프티콘)<br>
+                                수집하는 개인정보 항목: 이름, 연락처<br>
+                                개인정보 보유 및 이용 기간: 경품 발송 후 즉시 파기<br><br>
+                                
+                                ※ 귀하께서는 동의하지 않을 권리가 있습니다. 동의하지 않을 경우 경품 발송 대상제어 제외 됩니다.<br>
+                                개인정보 취급 위탁에 대해 동의하시나요?</p>
+                        </div>
+                        <div class="ui_radio--custom s020101">
+                            <form name="agree_confirm" id="agree_confirm" method="post" action="/thumbnail/dwld/home/faxdoc_new.zip"> <div class="inblock checkbox-box">
+                                <label class="radio-inline" for="agree_confirm_2_1">
+                                    <span class="gubun point">필수</span>
+                                    <input type="checkbox" id="agree_confirm_2_1" name="ch_02_01" title="동의합니다."> 동의합니다.
+                                    <span class="chk_ball"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="text-center check-all">
+                <div class="checkbox-box">
+                    <label class="radio-inline" for="agreeAll">
+                        <input type="checkbox" id="agreeAll" name="agreeAll" title="전체 동의합니다.">전체 동의합니다.
+                        <span class="chk_ball"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    
+        <h2 class="h2">오픈 이벤트  참여 등록</h2>
+        <div class="text-right">
+            <span class="help-inblock">
+                <span class="pilsu" aria-hidden="true"></span>
+                <span class="point">필수 입력항목</span>
+                의 경우 빠짐없이 기재해주세요.
+            </span>
+        </div>
+        <div class="form-horizontal bucket-form">
+            <div class="form-group">
+                <div class="col-sm-2 control-label">
+                    <label for="hname">
+                        <span class="pilsu">필수</span>
+                        이름
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" name="hname" id="hname" title="이름 입력창입니다." placeholder="이름을 입력해 주세요." value="" class="form-control">
+                </div>
+            </div>
+    
+            <div class="form-group tel">
+                <div class="col-sm-2 control-label">
+                    <label for="tel1">
+                        <span class="pilsu">필수</span>
+                        휴대전화
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-box d-flex">
+                        <select id="tel1" name="tel1" class="form-control tel" title="전화번호 첫번째 자리 선택">
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>
+                            <option value="019">019</option>
+                        </select>
+                        <span></span>
+                        <input type="text" id="tel2" name="tel" title="전화번호 두번째 자리 입력" class="form-control tel" value="">
+                        <span>-</span>
+                        <input type="text" id="tel2" name="tel" title="전화번호 세번째 자리 입력" class="form-control tel" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <h2 class="h2">공유 URL</h2>
+        <div class="share-url">
+            <div class="form-horizontal bucket-form">
+                <div class="form-group urlarea">
+                    <div class="col-sm-1 control-label">
+                        <label for="n01">01</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="form-box d-flex custom">
+                            <input type="text" id="n01" name="" title="첫번째 URL 입력창입니다." placeholder="URL을 등록하게되면 체크박스가 활성화됩니다." class="form-control" value=""> 
+                            <div class="checkbox-box">
+                                <label class="checkbox-inline" for="checkbox3"> 
+                                    <input type="checkbox" id="checkbox3" name="checkbox" title="비활성화" value="" disabled>
+                                    <span class="chk_ball"></span> 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group urlarea">
+                    <div class="col-sm-1 control-label">
+                        <label for="n02">02</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="form-box d-flex custom">
+                            <input type="text" id="n02" name="" title="두번째 URL 입력창입니다." placeholder="URL을 등록하게되면 체크박스가 활성화됩니다." class="form-control" value=""> 
+                            <div class="checkbox-box">
+                                <label class="checkbox-inline" for="checkbox3-2"> 
+                                    <input type="checkbox" id="checkbox3-2" name="checkbox" title="비활성화" value="" disabled>
+                                    <span class="chk_ball"></span> 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group urlarea">
+                    <div class="col-sm-1 control-label">
+                        <label for="n03">03</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="form-box d-flex custom">
+                            <input type="text" id="n03" name="" title="두번째 URL 입력창입니다." placeholder="URL을 등록하게되면 체크박스가 활성화됩니다." class="form-control" value=""> 
+                            <div class="checkbox-box">
+                                <label class="checkbox-inline" for="checkbox3-3"> 
+                                    <input type="checkbox" id="checkbox3-3" name="checkbox" title="비활성화" value="" disabled>
+                                    <span class="chk_ball"></span> 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group urlarea">
+                    <div class="col-sm-1 control-label">
+                        <label for="n04">04</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="form-box d-flex custom">
+                            <input type="text" id="n04" name="" title="두번째 URL 입력창입니다." placeholder="URL을 등록하게되면 체크박스가 활성화됩니다." class="form-control" value=""> 
+                            <div class="checkbox-box">
+                                <label class="checkbox-inline" for="checkbox3-4"> 
+                                    <input type="checkbox" id="checkbox3-4" name="checkbox" title="비활성화" value="" disabled>
+                                    <span class="chk_ball"></span> 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group urlarea">
+                    <div class="col-sm-1 control-label">
+                        <label for="n05">05</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="form-box d-flex custom">
+                            <input type="text" id="n05" name="" title="두번째 URL 입력창입니다." placeholder="URL을 등록하게되면 체크박스가 활성화됩니다." class="form-control" value=""> 
+                            <div class="checkbox-box">
+                                <label class="checkbox-inline" for="checkbox3-5"> 
+                                    <input type="checkbox" id="checkbox3-5" name="checkbox" title="비활성화" value="" disabled>
+                                    <span class="chk_ball"></span> 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group urlarea">
+                    <div class="col-sm-1 control-label">
+                        <label for="n06">06</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="form-box d-flex custom">
+                            <input type="text" id="n06" name="" title="두번째 URL 입력창입니다." placeholder="URL을 등록하게되면 체크박스가 활성화됩니다." class="form-control" value=""> 
+                            <div class="checkbox-box">
+                                <label class="checkbox-inline" for="checkbox3-6"> 
+                                    <input type="checkbox" id="checkbox3-6" name="checkbox" title="비활성화" value="" disabled>
+                                    <span class="chk_ball"></span> 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group urlarea">
+                    <div class="col-sm-1 control-label">
+                        <label for="n07">07</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="form-box d-flex custom">
+                            <input type="text" id="n07" name="" title="두번째 URL 입력창입니다." placeholder="URL을 등록하게되면 체크박스가 활성화됩니다." class="form-control" value=""> 
+                            <div class="checkbox-box">
+                                <label class="checkbox-inline" for="checkbox3-7"> 
+                                    <input type="checkbox" id="checkbox3-7" name="checkbox" title="비활성화" value="" disabled>
+                                    <span class="chk_ball"></span> 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group urlarea">
+                    <div class="col-sm-1 control-label">
+                        <label for="n08">08</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="form-box d-flex custom">
+                            <input type="text" id="n08" name="" title="두번째 URL 입력창입니다." placeholder="URL을 등록하게되면 체크박스가 활성화됩니다." class="form-control" value=""> 
+                            <div class="checkbox-box">
+                                <label class="checkbox-inline" for="checkbox3-8"> 
+                                    <input type="checkbox" id="checkbox3-8" name="checkbox" title="비활성화" value="" disabled>
+                                    <span class="chk_ball"></span> 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group urlarea">
+                    <div class="col-sm-1 control-label">
+                        <label for="n09">09</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="form-box d-flex custom">
+                            <input type="text" id="n09" name="" title="두번째 URL 입력창입니다." placeholder="URL을 등록하게되면 체크박스가 활성화됩니다." class="form-control" value=""> 
+                            <div class="checkbox-box">
+                                <label class="checkbox-inline" for="checkbox3-9"> 
+                                    <input type="checkbox" id="checkbox3-9" name="checkbox" title="비활성화" value="" disabled>
+                                    <span class="chk_ball"></span> 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group urlarea">
+                    <div class="col-sm-1 control-label">
+                        <label for="n10">10</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="form-box d-flex custom">
+                            <input type="text" id="n10" name="" title="두번째 URL 입력창입니다." placeholder="URL을 등록하게되면 체크박스가 활성화됩니다." class="form-control" value=""> 
+                            <div class="checkbox-box">
+                                <label class="checkbox-inline" for="checkbox3-10"> 
+                                    <input type="checkbox" id="checkbox3-10" name="checkbox" title="비활성화" value="" disabled>
+                                    <span class="chk_ball"></span> 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fe-btn_box">
+                <button type="button" class="fe-btn fe-btn-success fe-btn-md">
+                    등록하기
+                    <i class="fa fa-check fa-r" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="txt-box type02">
+                <div class="txt-fouse">
+                    <strong class="title">이벤트 유의사항</strong>
+                    <div class="contxt">
+                        <ul class="list-1st">
+                            <li>한 명당 최대 10개의 URL을 등록할 수 있으며, 동일한 URL의 중복 등록은 제외됩니다.</li>
+                            <li>당첨자 발표는 추후 홈페이지 공지사항을 확인해주세요.</li>
+                            <li>SNS 게시글은 전체 공개로 설정해 주셔야 확인이 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="copy-phrase">
+            <div class="wrapper">
+                <strong class="tit">홍보문구 <b>복사 기능</b> 안내</strong>
+                <span class="txt">이벤트 참여자분들이 SNS에 쉽게 공유하실 수 있도록, 홍보 문구 복사 기능을 제공합니다.<br>아래의 예시 문구를 복사하여 SNS에 올리면, 더 빠르고 간편하게 참여하실 수 있습니다.</span>
+                <div class="inner">
+                    <div class="thm-box tb1">
+                        <img src="/images/kor/sub06/sns-copy-phrase-02.png" alt="">
+                        <div id="copy1" style="display: none;">
+                            충남관광 홈페이지 오픈 축하!<br><br>
+    
+                            가깝고도 새로운 충남 여행지, 어디부터 가볼까요?<br>
+                            2025~2026 충남방문의 해를 맞아<br>
+                            새로워진 충남관광 홈페이지에서 추천 코스, 맛집 리스트까지 한 번에 살펴보세요!<br>
+                            지금 오픈 이벤트 참여하면 총 200명에게 스타벅스 기프트카드를 준다고 하니,<br>
+                            올봄 여행 계획도 세우고 선물도 받아볼 절호의 기회!<br><br>
+    
+                            지금 방문해보기 : https://tour.chungnam.go.kr/<br>
+                            #충남관광 #충남여행 #봄여행 #홈페이지오픈이벤트 #스타벅스기프트카드<br>
+                        </div>
+                        <a href="#n" target="_blank" title="새창열림" class="linkcopy-btn">복사하기</a>
+                    </div>
+                    <div class="thm-box tb2">
+                        <img src="/images/kor/sub06/sns-copy-phrase-01.png" alt="">
+                        <div id="copy2" style="display: none;">
+                            아직도 어디 갈지 고민 중이세요?<br><br>
+    
+                            2025~2026 충남방문의 해를 맞아<br>
+                            다양한 여행정보를 제공하는 충남관광 홈페이지가 오픈했어요!<br>
+                            저는 이미 충남 명소 버킷리스트 만들면서 다음 여행 계획 중입니다.<br>
+                            오픈 기념 SNS 공유 이벤트로 1만원권 스타벅스 기프트카드 200명 증정이라니, 대박!<br>
+                            지금 바로 방문해서 여행 정보도 얻고, 이벤트도 놓치지 마세요!<br><br>
+    
+                            지금 방문해보기 : https://tour.chungnam.go.kr/<br>
+                            #충남 #충남관광 #국내여행 #스벅 #이벤트참여<br>
+                        </div>
+                        <a href="#n" target="_blank" title="새창열림" class="linkcopy-btn">복사하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <script>
+        $(".urlarea").each(function () {
+            var $textInput = $(this).find('input[type="text"]');
+            var $checkBox = $(this).find('input[type="checkbox"]');
+    
+            $textInput.on("input", function () {
+                if ($.trim($(this).val()) !== "") {
+                    $checkBox.prop({
+                        "disabled": false,
+                        "checked": true
+                    }).attr("title", "활성화됨");
+                } else {
+                    $checkBox.prop({
+                        "disabled": true,
+                        "checked": false
+                    }).attr("title", "비활성화");
+                }
+            });
+        });
+    </script>
 
 
 </body>
