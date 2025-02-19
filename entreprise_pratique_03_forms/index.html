@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/form.stories.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Form</title>
+</head>
+<body>
+    <div id="wrap">
+        <div class="wrapper">
+            <!-- 기본폼 -->
+            <h2 class="h2">신청자 정보 작성</h2>
+            <div class="text-right">
+                <span class="help-inblock">
+                    <span class="pilsu">필수</span>
+                    <span class="point">입력항목</span>의 경우 빠짐없이 기재해주세요.
+                </span>
+            </div>
+            <div class="form-horizontal bucket-form">
+                <div class="form-group">
+                    <div class="col-sm-2 control-label">
+                        <label for="hname"><span class="pilsu">필수</span>이름</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" name="hname" id="hname" title="이름 입력창입니다." placeholder="이름을 입력해 주세요."  value="" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2 control-label"><label for="id"><span class="pilsu">필수</span>아이디</label></div>
+                    <div class="col-sm-4">
+                        <input type="text" name="id" id="id" title="아이디 입력창입니다." placeholder=""  value="" class="form-control" readonly>
+                    </div>
+                </div>
+                <div class="form-group password">
+                    <div class="col-sm-2 control-label"><label for="password"><span class="pilsu">필수</span>비밀번호</label></div>
+                    <div class="col-sm-4">
+                        <input type="text" name="password" id="password" title="비밀번호 입력창입니다." placeholder="국문, 영문, 숫자 포함 8자리 이상 입력해 주세요."  value="" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2 control-label">
+                        <div class="label"><span class="pilsu">필수</span>radio</div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="radio-box">
+                            <label class="radio-inline" for="radio1">
+                                <input type="radio" id="radio1" name="radio" title="라디오1" value="a">radio1
+                                <span class="chk_ball"></span>
+                            </label>
+                            <label class="radio-inline" for="radio2">
+                                <input type="radio" id="radio2" name="radio" title="라디오2" value="b">radio2
+                                <span class="chk_ball"></span>
+                            </label>
+                            <label class="radio-inline" for="radio3">
+                                <input type="radio" id="radio3" name="radio" title="라디오3" value="c">radio3
+                                <span class="chk_ball"></span>
+                            </label>
+                            <div class="etc-input">
+                                <label class="radio-inline" for="radio4">
+                                    <input type="radio" id="radio4" name="radio" title="기타" value="d">기타
+                                    <span class="chk_ball"></span>
+                                </label>
+                                <input type="text" id="radio4-1" name="radio4-1" title="기타입력값입니다." class="form-control" value="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2 control-label"><div class="label"><span class="pilsu">필수</span>radio (개행)</div></div>
+                    <div class="col-sm-10">
+                        <div class="radio-box">
+                            <label class="radio" for="radio5">
+                                <input type="radio" id="radio5" name="radio1" title="라디오5" value="a">radio1
+                                <span class="chk_ball"></span>
+                            </label>
+                            <label class="radio" for="radio6">
+                                <input type="radio" id="radio6" name="radio1" title="라디오6" value="b">radio2
+                                <span class="chk_ball"></span>
+                            </label>
+                            <label class="radio" for="radio7">
+                                <input type="radio" id="radio7" name="radio1" title="라디오7" value="c">radio3
+                                <span class="chk_ball"></span>
+                            </label>
+                            <div class="etc-input">
+                                <label class="radio" for="radio8">
+                                    <input type="radio" id="radio8" name="radio1" title="기타" value="d">기타
+                                    <span class="chk_ball"></span>
+                                </label>
+                                <input type="text" id="radio8-1" name="radio8-1" title="기타입력값입니다." class="form-control" value="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2 control-label"><div class="label"><span class="pilsu">필수</span>checkbox</div></div>
+                    <div class="col-sm-10">
+                        <div class="checkbox-box">
+                            <label class="checkbox-inline" for="checkbox1">
+                                <input type="checkbox" id="checkbox1" name="checkbox" title="checkbox1" value="d">checkbox1
+                                <span class="chk_ball"></span>
+                            </label>
+                            <label class="checkbox-inline" for="checkbox2">
+                                <input type="checkbox" id="checkbox2" name="checkbox" title="checkbox2" value="e">checkbox2
+                                <span class="chk_ball"></span>
+                            </label>
+                            <label class="checkbox-inline" for="checkbox3">
+                                <input type="checkbox" id="checkbox3" name="checkbox" title="checkbox3" value="f">checkbox3
+                                <span class="chk_ball"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2 control-label"><div class="label"><span class="pilsu">필수</span>checkbox (개행)</div></div>
+                    <div class="col-sm-10">
+                        <div class="checkbox-box">
+                            <label class="checkbox" for="checkbox4">
+                                <input type="checkbox" id="checkbox4" name="checkbox" title="checkbox4" value="d">checkbox1
+                                <span class="chk_ball"></span>
+                            </label>
+                            <label class="checkbox" for="checkbox5">
+                                <input type="checkbox" id="checkbox5" name="checkbox" title="checkbox5" value="e">checkbox2
+                                <span class="chk_ball"></span>
+                            </label>
+                            <label class="checkbox" for="checkbox6">
+                                <input type="checkbox" id="checkbox6" name="checkbox" title="checkbox6" value="f">checkbox3
+                                <span class="chk_ball"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group tel">
+                    <div class="col-sm-2 control-label">
+                        <label for="tel1"><span class="pilsu">필수</span>실무자 연락처</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-box d-flex">
+                            <select id="tel1" name="tel1" class="form-control tel" title="전화번호 첫번째 자리 선택">
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                            </select>
+                            <span>-</span>
+                            <input type="text" id="tel2" name="tel" title="전화번호 두번째 자리 입력" class="form-control tel" value="">
+                            <span>-</span>
+                            <input type="text" id="tel2" name="tel" title="전화번호 세번째 자리 입력" class="form-control tel" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group email">
+                    <div class="col-sm-2 control-label"><div class="label"><span class="pilsu">필수</span>이메일
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-box d-flex">
+                            <input type="text" id="email" name="email" title="이메일 주소 입력" class="form-control" value="">
+                            <span>@</span>
+                            <input type="text" id="email2" title="이메일 도메인 입력" class="form-control">
+                            <select id="emailSel" title="이메일 도메인 선택" class="form-control">
+                                <option value="" selected="selected">직접입력 </option>
+                                <option value="naver.com">네이버</option>
+                                <option value="daum.net">다음</option>
+                                <option value="hanmail.net">한메일</option>
+                                <option value="gmail.com">구글</option>
+                                <option value="hotmail.com">핫메일</option>
+                                <option value="yahoo.com">야후</option>
+                                <option value="nate.com">네이트</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- 에러일때 -->
+                <div class="form-group email error">
+                    <div class="col-sm-2 control-label">
+                        <label for="email"><span class="pilsu">필수</span>이메일</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-box d-flex">
+                            <input type="text" id="email" name="email" title="이메일 주소 입력" class="form-control" value="">
+                            <span>@</span>
+                            <input type="text" id="email2" title="이메일 도메인 입력" class="form-control">
+                            <select id="emailSel" title="이메일 도메인 선택" class="form-control">
+                                <option value="" selected="selected">직접입력 </option>
+                                <option value="naver.com">네이버</option>
+                                <option value="daum.net">다음</option>
+                                <option value="hanmail.net">한메일</option>
+                                <option value="gmail.com">구글</option>
+                                <option value="hotmail.com">핫메일</option>
+                                <option value="yahoo.com">야후</option>
+                                <option value="nate.com">네이트</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 t-help message">
+                            <span class="help-block">데이터가 유효하지 않을 경우 경고 내용이 들어갑니다.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 에러일때 -->
+                <!-- 입력완료 -->
+                <div class="form-group email valid">
+                    <div class="col-sm-2 control-label"><label for="email"><span class="pilsu">필수</span>이메일
+                        </label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-box d-flex">
+                            <input type="text" id="email" name="email" title="이메일 주소 입력" class="form-control" value="">
+                            <span>@</span>
+                            <input type="text" id="email2" title="이메일 도메인 입력" class="form-control">
+                            <select id="emailSel" title="이메일 도메인 선택" class="form-control">
+                                <option value="" selected="selected">직접입력 </option>
+                                <option value="naver.com">네이버</option>
+                                <option value="daum.net">다음</option>
+                                <option value="hanmail.net">한메일</option>
+                                <option value="gmail.com">구글</option>
+                                <option value="hotmail.com">핫메일</option>
+                                <option value="yahoo.com">야후</option>
+                                <option value="nate.com">네이트</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2 control-label">
+                        <label for="zip_view"><span class="pilsu">필수</span>단체주소</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-control-static">
+                            <div class="col-sm-4 form-group">
+                                <input type="text" name="zip_view" id="zip_view" value="" maxlength="8" readonly="readonly"
+                                    title="우편번호" class="form-control">
+                                <input type="hidden" id="zip" name="zip">
+                            </div>
+                            <button type="button" onclick="goZipCodePopup();" class="fe-btn fe-btn-primary outline fe-btn-sm" title="주소검색 새창열림">
+                                <i class="fa fa-search" aria-hidden="true"></i>주소검색
+                            </button>
+                        </div>
+                        <div class="form-control-static">
+                            <input type="text" name="addr" id="addr" class="form-control" title="주소첫번째입력창입니다.">
+                        </div>
+                        <div class="form-control-static">
+                            <input type="text" name="detailAdres" id="detailAdres" class="form-control" title="주소두번째입력창입니다.">
+                        </div>
+                    </div>
+                </div>
+                <!-- 단체주소 에러일때 :s-->
+                <div class="form-group error">
+                    <div class="col-sm-2 control-label"><label for="zip_view"><span class="pilsu">필수</span>단체주소
+                        </label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-control-static">
+                            <div class="col-sm-4 form-group">
+                                <input type="text" name="zip_view" id="zip_view" value="" maxlength="8" readonly="readonly"
+                                    title="우편번호" class="form-control">
+                                <input type="hidden" id="zip" name="zip">
+                            </div>
+                            <button type="button" onclick="goZipCodePopup();" class="fe-btn fe-btn-primary outline fe-btn-sm" title="주소검색 새창열림"><i
+                                    class="fa fa-search" aria-hidden="true"></i>주소검색</button>
+                        </div>
+                        <div class="form-control-static">
+                            <input type="text" name="addr" id="addr" class="form-control" title="주소첫번째입력창입니다.">
+                        </div>
+                        <div class="form-control-static">
+                            <input type="text" name="detailAdres" id="detailAdres" class="form-control" title="주소두번째입력창입니다.">
+                        </div>
+                        <div class="col-sm-12 t-help message">
+                            <span class="help-block">데이터가 유효하지 않을 경우 경고 내용이 들어갑니다.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 단체주소 에러일때 :e-->
+                <div class="form-group select">
+                    <div class="col-sm-2 control-label"><label for="gubun1"><span class="pilsu">필수</span>select 구분1
+                        
+                        </label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-box d-flex">
+                            <div class="col-sm-4">
+                                <select id="gubun1" name="gubun1" class="form-control" title="첫번째 구분 선택" required="">
+                                    <option value="">전체</option>
+                                    <option value="A">구분1</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select id="gubun1-1" name="gubun1-1" class="form-control" title="두번째 구분 선택">
+                                    <option value="">전체</option>
+                                    <option value="B">구분2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- select 구분 1 에러일때 :s-->
+                <div class="form-group select error">
+                    <div class="col-sm-2 control-label"><label for="gubun1"><span class="pilsu">필수</span>select 구분1
+                        
+                        </label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-box d-flex">
+                            <div class="col-sm-4">
+                                <select id="gubun1" name="gubun1" class="form-control" title="첫번째 구분 선택" required="">
+                                    <option value="">전체</option>
+                                    <option value="A">구분1</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select id="gubun1-1" name="gubun1-1" class="form-control" title="두번째 구분 선택">
+                                    <option value="">전체</option>
+                                    <option value="B">구분2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 t-help message">
+                            <span class="help-block">데이터가 유효하지 않을 경우 경고 내용이 들어갑니다.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- select 구분 1 에러일때 :e-->
+                <!-- select 구분 1 입력완료 :s-->
+                <div class="form-group select valid">
+                    <div class="col-sm-2 control-label"><label for="gubun1"><span class="pilsu">필수</span>select 구분1
+                        
+                        </label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-box d-flex">
+                            <div class="col-sm-4">
+                                <select id="gubun1" name="gubun1" class="form-control" title="첫번째 구분 선택" required="">
+                                    <option value="">전체</option>
+                                    <option value="A">구분1</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select id="gubun1-1" name="gubun1-1" class="form-control" title="두번째 구분 선택">
+                                    <option value="">전체</option>
+                                    <option value="B">구분2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- select 구분 1 입력완료 :e-->
+                <div class="form-group select">
+                    <div class="col-sm-2 control-label"><label for="gubun2"><span class="pilsu">필수</span>select 구분2
+                        
+                        </label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-box d-flex">
+                            <div class="col-sm-4">
+                                <select id="gubun2" name="gubun2" class="form-control" title="첫번째 구분 선택" required="">
+                                    <option value="">전체</option>
+                                    <option value="A">구분1</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select id="gubun2-1" name="gubun2-1" class="form-control" title="두번째 구분 선택">
+                                    <option value="">전체</option>
+                                    <option value="B">구분2</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select id="gubun2-2" name="gubun2-2" class="form-control" title="세번째 구분 선택">
+                                    <option value="">전체</option>
+                                    <option value="c">구분3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- select 구분 2 에러일때 :s -->
+                <div class="form-group select error">
+                    <div class="col-sm-2 control-label"><label for="gubun2"><span class="pilsu">필수</span>select 구분2
+                        
+                        </label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-box d-flex">
+                            <div class="col-sm-4">
+                                <select id="gubun2" name="gubun2" class="form-control" title="첫번째 구분 선택" required="">
+                                    <option value="">전체</option>
+                                    <option value="A">구분1</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select id="gubun2-1" name="gubun2-1" class="form-control" title="두번째 구분 선택">
+                                    <option value="">전체</option>
+                                    <option value="B">구분2</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select id="gubun2-2" name="gubun2-2" class="form-control" title="세번째 구분 선택">
+                                    <option value="">전체</option>
+                                    <option value="B">구분3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 t-help message">
+                            <span class="help-block">데이터가 유효하지 않을 경우 경고 내용이 들어갑니다.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- select 구분 2 에러일때 :e -->
+                <!-- select 구분 2 입력완료 :s -->
+                <div class="form-group select valid">
+                    <div class="col-sm-2 control-label"><label for="gubu2"><span class="pilsu">필수</span>select 구분2
+                        
+                        </label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-box d-flex">
+                            <div class="col-sm-4">
+                                <select id="gubun2" name="gubun2" class="form-control" title="첫번째 구분 선택" required="">
+                                    <option value="">전체</option>
+                                    <option value="A">구분1</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select id="gubun2-1" name="gubun2-1" class="form-control" title="두번째 구분 선택">
+                                    <option value="">전체</option>
+                                    <option value="B">구분2</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select id="gubun2-2" name="gubun2-2" class="form-control" title="세번째 구분 선택">
+                                    <option value="">전체</option>
+                                    <option value="B">구분3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- select 구분 2 입력완료 :e -->
+                <div class="form-group date">
+                    <div class="col-sm-2 control-label">
+                        <div class="label">단일 날짜 테스트</div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group date" data-date="datepicker">
+                            <label for="singleDate" class="skip">단일 날짜 입력</label>
+                            <input id="singleDate" name="singleDate" placeholder="yyyy-mm-dd" class="form-control date__input singleDate" type="text" value="">
+                            <div class="input__split">
+                                <div class="datepicker__wrap"><button type="button" class="input__item date__icon">달력 열기</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group date">
+                    <div class="col-sm-2 control-label">
+                        <div class="label">날짜</div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-date-selectbox">
+                            <div class="date-group" data-date="daterange">
+                                <div class="form-group date" data-date="datepicker">
+                                    <label for="startDate" class="skip">기간시작일입력</label>
+                                    <input id="startDate" name="startDate" placeholder="yyyy-mm-dd"
+                                        class="form-control date__input start" type="text" value="">
+                                    <div class="input__split">
+                                        <div class="datepicker__wrap"><button type="button" class="input__item  date__icon">달력열기</button></div>
+                                    </div>
+                                </div>
+                                <span class="form__split">~</span>
+                                <div class="form-group date" data-date="datepicker">
+                                    <label for="endDate" class="skip">기간종료일입력</label>
+                                    <input id="endDate" name="endDate" placeholder="yyyy-mm-dd"
+                                        class="form-control date__input end" type="text" value="">
+                                    <div class="input__split">
+                                        <div class="datepicker__wrap"><button type="button" class="input__item  date__icon ">달력열기</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group time">
+                    <div class="col-sm-2 control-label"><div class="label">time picker(입력불가능)</div></div>
+                    <div class="col-sm-10">
+                        <div class="form-time-selectbox" id="RangePickerselectbox" data-type="timeRangePicker" data-start=".start-time" data-end=".end-time" data-interval="30" data-min-time="08:00" data-max-time="23:00">
+                            <div class="time-group">
+                                <div class="form-group">
+                                    <label for="startDate" class="skip">시작시간입력</label>
+                                    <input placeholder="" class="form-control time__input start-time" type="text" value="" readonly="" autocomplete="off">
+                                    <div class="input__split">
+                                        <div class="timepicker__wrap"><button type="button" class="input__item  time__icon ">시간
+                                            열기</button></div>
+                                    </div>
+                                </div>
+                                <span class="form__split">~</span>
+                                <div class="form-group">
+                                    <label for="endDate" class="skip">종료시간입력</label>
+                                    <input placeholder="" class="form-control time__input end-time" type="text" value="" readonly="" autocomplete="off">
+                                    <div class="input__split">
+                                        <div class="timepicker__wrap"><button type="button" class="input__item  time__icon ">시간
+                                            열기</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group time">
+                    <div class="col-sm-2 control-label"><div class="label">time picker(입력가능)</div></div>
+                    <div class="col-sm-10">
+                        <div class="form-time-selectbox" data-type="timeRangePicker" data-start=".start-time" data-end=".end-time" data-interval="15" data-min-time="06:00" data-max-time="22:00">
+                            <div class="time-group">
+                                <div class="form-group">
+                                    <label for="startDate" class="skip">시작시간입력</label>
+                                    <input placeholder="HH:MM" class="form-control time__input start-time" type="text" value="" autocomplete="off">
+                                </div>
+                                <span class="form__split">~</span>
+                                <div class="form-group">
+                                    <label for="endDate" class="skip">종료시간입력</label>
+                                    <input placeholder="HH:MM" class="form-control time__input end-time" type="text" value="" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group time">
+                    <div class="col-sm-2 control-label"><div class="label">time picker3</div></div>
+                    <div class="col-sm-5">
+                        <div class="form-group time" data-type="timePicker" data-start=".start-time" data-end=".end-time" data-interval="30" data-min-time="08:00" data-max-time="23:00">
+                            <label for="startDate" class="skip">시간입력</label>
+                            <input placeholder="" class="form-control time__input single-time" type="text" value="" readonly="" autocomplete="off">
+                            <div class="input__split">
+                                <div class="timepicker__wrap"><button type="button" class="input__item  time__icon ">시간
+                                        열기</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group time">
+                    <div class="col-sm-2 control-label"><div class="label">time picker4</div></div>
+                    <div class="col-sm-5">
+                        <div class="form-group time" id="times" data-type="timePicker" data-start=".start-time" data-end=".end-time" data-interval="30" data-min-time="10:00" data-max-time="20:00">
+                            <label for="startDate" class="skip">시간입력</label>
+                            <input placeholder="" class="form-control time__input single-time" type="text" value="" readonly="" autocomplete="off">
+                            <div class="input__split">
+                                <div class="timepicker__wrap"><button type="button" class="input__item  time__icon ">시간
+                                        열기</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <div class="col-sm-2 control-label"><label for="input5">테스트 </label></div>
+                    <div class="col-sm-10 row">
+                        <div class="col-sm-4">
+                            <input type="text" name="input5" id="input5" title="레이블 텍스트" class="form-control">
+                        </div>
+                        <div class="col-sm-12 t-help">
+                            <span class="help-block"><i class="fa fa-exclamation-circle"></i>내용이 들어갑니다 내용이 들어갑니다 내용이
+                                들어갑니다 내용이 들어갑니다</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2 control-label"><label for="input4">테스트</label></div>
+                    <div class="col-sm-4">
+                        <input type="text" name="input4" id="input4" title="레이블 텍스트" class="form-control">
+                    </div>
+                    <div class="col-sm-5 p_custom">
+                        <span class="help-block"><i class="fa fa-exclamation-circle"></i>설명 입니다. 줄 바꿈 없습니다.</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2 control-label"><label for="t1">기타입력</label></div>
+                    <div class="col-sm-10">
+                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!--기본 문서 파일 :s-->
+                <div class="form-group file">
+                    <div class="col-sm-2 control-label"><label for="file_0">파일등록 전</label></div>
+                    <div class="col-sm-10">
+                        <div id="fileInfo" class="fileInfo">
+                            <div class="form-group row mb-1 ml-0">
+                                <label class="col-sm-10 custom-file">
+                                    <input type="file" name="file_0" id="file_0" title="첨부하실 파일을 선택해 주세요. 파일 새창열림" class="custom-file-input">
+                                    <span class="custom-file-label text-truncate text-light">첨부하실 파일을 선택해 주세요.</span>
+                                </label>
+                            </div>
+                            <div class="col-sm-12">
+                                <span class="help-block">※ jpg, jpeg, gif, png, bmp, doc, docx, hwp, xls, xlsx, zip, pdf, ppt, pptx 형식만 지원.</span>
+                                <span class="help-block">※ 파일 사이즈 2MB까지 업로드 가능합니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group file">
+                    <div class="col-sm-2 control-label"><label for="content_0">파일등록 후</label></div>
+                    <div class="col-sm-10">
+                        <div id="fileInfo" class="fileInfo">
+                            <div class="form-upload" id="fileItem_0">
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="content_0" placeholder="" value="">
+                                    </div>
+                                    <div class="btn-group col-sm-5">
+                                        <a href="#" class="fe-btn fe-btn-danger fe-btn-sm delete" title="삭제"
+                                        onclick="fn_egov_deleteFile('FILE_000000005351Kx4','0','fileItem_0'); return false;">
+                                        삭제
+                                        </a>
+                                        <a href="#" class="fe-btn fe-btn-primary fe-btn-sm update" title="수정"
+                                            onclick="fn_egov_updateFile('FILE_000000005351Kx4','0','content_0'); return false;">
+                                            수정
+                                        </a>
+                                        <a href="#" class="fe-btn fe-btn-secondary fe-btn-sm download" title="다운로드"
+                                            onclick="javascript:fn_bbs_downFile('FILE_000000005351Kx4','0'); return false;">
+                                            다운로드
+                                        </a>
+                                        <a href="#" class="fe-btn fe-btn-success fe-btn-sm link" title="링크 복사"
+                                            onclick="javascript:copyToClipboard('/thumbnail/crudTemp/CT_20220208111831311Vu30.png'); return false;">
+                                            링크
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--기본 문서 파일 :e-->
+                <div class="form-group">
+                    <div class="col-sm-2 control-label"><label for="atchFileId">게시판 첨부파일 <span class="pilsu">필수</span></label></div>
+                    <div class="col-sm-10" id="fileInfo">
+
+
+
+
+
+                        <div id="fileInfo">
+
+                            <div class="form-upload" id="fileItem0">
+                                <div class="file-form-group">
+
+
+                                    <div class="form-previewbox">
+                                        <a href="/thumbnail/BBSMSTR_000000000002/BBS_20240620173857022Vh50.jpg">
+                                            <img src="/thumbnail/BBSMSTR_000000000002/300_BBS_20240620173857022Vh50.jpg" width="60" height="60" alt="해당파일이미지">
+                                        </a>
+                                    </div>
+
+
+
+                                    <div class="form-group__upload">
+                                        <textarea class="form-control" id="content0" placeholder="1번째 파일 대체 텍스트를 입력해 주세요." title="1번째 파일 대체 텍스트">bird</textarea>
+                                    </div>
+                                    <!-- <div class="col bite">[6.1&nbsp;KB] -->
+                                    <div class="form-input__addon">
+                                        <a href="#" class="btn btn-danger delete btn-sm" title="Delete" onclick="fn_egov_deleteFile('FILE_000000000281Ce6','0','fileItem0'); return false;">
+                                            삭제
+                                        </a>
+                                        <a href="#" class="btn btn-primary update btn-sm" title="Update" onclick="fn_egov_updateFile('FILE_000000000281Ce6','0','content0'); return false;">
+                                            수정
+                                        </a>
+                                        <a href="#" class="btn btn-secondary download btn-sm" title="Download" onclick="javascript:fn_bbs_downFile('FILE_000000000281Ce6','0'); return false;">
+                                            다운로드
+                                        </a>
+
+
+                                        <a href="#" class="btn btn-success link btn-sm" title="링크 복사" onclick="javascript:copyToClipboard('/thumbnail/BBSMSTR_000000000002/BBS_20240620173857022Vh50.jpg'); return false;">
+                                            링크
+                                        </a>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <input type="hidden" name="atchFileId" id="atchFileId" value="FILE_000000000281Ce6">
+                        <input type="hidden" name="fileListCnt" id="fileListCnt" value="1">
+
+
+
+
+
+
+                        <div class="form-upload">
+                            <div class="file-form-group">
+                                <div class="form-group__upload">
+                                    <input type="text" class="form-control disabled" placeholder="2번째 파일을 선택해 주세요." title="2번째 파일">
+                                    <input type="file" name="file_1" id="atchmn_1" class="form-upload__file--hidden">
+                                </div>
+                                <div class="form-input__addon">
+                                    <label for="atchmn_1" class="btn btn-sm btn-primary" data-button="upload">
+                                        <span class="skip">2번째 </span>파일선택
+                                    </label>
+                                </div>
+                                <div class="form-group__upload">
+                                    <textarea name="fileCnArr" class="form-control" id="content1" placeholder="2번째 파일 대체 텍스트를 입력해 주세요." title="2번째 파일 대체 텍스트"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-upload">
+                            <div class="file-form-group">
+                                <div class="form-group__upload">
+                                    <input type="text" class="form-control disabled" placeholder="3번째 파일을 선택해 주세요." title="3번째 파일">
+                                    <input type="file" name="file_2" id="atchmn_2" class="form-upload__file--hidden">
+                                </div>
+                                <div class="form-input__addon">
+                                    <label for="atchmn_2" class="btn btn-sm btn-primary" data-button="upload">
+                                        <span class="skip">3번째 </span>파일선택
+                                    </label>
+                                </div>
+                                <div class="form-group__upload">
+                                    <textarea name="fileCnArr" class="form-control" id="content2" placeholder="3번째 파일 대체 텍스트를 입력해 주세요." title="3번째 파일 대체 텍스트"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-upload">
+                            <div class="file-form-group">
+                                <div class="form-group__upload">
+                                    <input type="text" class="form-control disabled" placeholder="4번째 파일을 선택해 주세요." title="4번째 파일">
+                                    <input type="file" name="file_3" id="atchmn_3" class="form-upload__file--hidden">
+                                </div>
+                                <div class="form-input__addon">
+                                    <label for="atchmn_3" class="btn btn-sm btn-primary" data-button="upload">
+                                        <span class="skip">4번째 </span>파일선택
+                                    </label>
+                                </div>
+                                <div class="form-group__upload">
+                                    <textarea name="fileCnArr" class="form-control" id="content3" placeholder="4번째 파일 대체 텍스트를 입력해 주세요." title="4번째 파일 대체 텍스트"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-upload">
+                            <div class="file-form-group">
+                                <div class="form-group__upload">
+                                    <input type="text" class="form-control disabled" placeholder="5번째 파일을 선택해 주세요." title="5번째 파일">
+                                    <input type="file" name="file_4" id="atchmn_4" class="form-upload__file--hidden">
+                                </div>
+                                <div class="form-input__addon">
+                                    <label for="atchmn_4" class="btn btn-sm btn-primary" data-button="upload">
+                                        <span class="skip">5번째 </span>파일선택
+                                    </label>
+                                </div>
+                                <div class="form-group__upload">
+                                    <textarea name="fileCnArr" class="form-control" id="content4" placeholder="5번째 파일 대체 텍스트를 입력해 주세요." title="5번째 파일 대체 텍스트"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-upload">
+                            <div class="file-form-group">
+                                <div class="form-group__upload">
+                                    <input type="text" class="form-control disabled" placeholder="6번째 파일을 선택해 주세요." title="6번째 파일">
+                                    <input type="file" name="file_5" id="atchmn_5" class="form-upload__file--hidden">
+                                </div>
+                                <div class="form-input__addon">
+                                    <label for="atchmn_5" class="btn btn-sm btn-primary" data-button="upload">
+                                        <span class="skip">6번째 </span>파일선택
+                                    </label>
+                                </div>
+                                <div class="form-group__upload">
+                                    <textarea name="fileCnArr" class="form-control" id="content5" placeholder="6번째 파일 대체 텍스트를 입력해 주세요." title="6번째 파일 대체 텍스트"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--이미지 파일 :s-->
+                <div class="form-group file img-file">
+                    <div class="col-sm-2 control-label"><label for="imgfile_0">이미지 파일등록 전</label></div>
+                    <div class="col-sm-10">
+                        <div id="fileInfo" class="fileInfo">
+                            <div class="form-group row mb-1 ml-0">
+                                <label class="col-sm-5 custom-file">
+                                    <input type="file" name="imgfile_0" id="imgfile_0" title="첨부하실 파일을 선택해 주세요. 파일 새창열림" class="custom-file-input">
+                                    <span class="custom-file-label text-truncate text-light">첨부하실 파일을 선택해 주세요.</span>
+                                </label>
+                                <div class="col-sm-5 ">
+                                    <input type="text" name="imgfile_1" class="form-control" id="imgfile_1"
+                                        placeholder="이미지 설명글을 작성해 주세요.→">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <span class="help-block">※ jpg, jpeg, gif, png, bmp, doc, docx, hwp, xls, xlsx, zip, pdf, ppt, pptx 형식만 지원.</span>
+                                <span class="help-block">※ 파일 사이즈 2MB까지 업로드 가능합니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group file img-file">
+                    <div class="col-sm-2 control-label"><label for="imgfile_2-1">이미지 파일등록 후</label></div>
+                    <div class="col-sm-10">
+                        <div id="fileInfo" class="fileInfo">
+                            <div class="form-upload" id="imgfile_2">
+                                <div class="row d-flex align-items-center mb-1">
+                                    <div class="col-auto">
+                                        <a href="/images/prog/no_image.png" target="_blank" title="새창열림">
+                                            <img src="/images/prog/no_image.png" width="60" class="img-fluid" alt="해당파일이미지">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="imgfile_2-1"
+                                            placeholder="이미지 설명글을 작성해 주세요.→" value="">
+                                    </div>
+                                    <div class="btn-group col-sm-5">
+                                        <a href="#" class="fe-btn fe-btn-danger fe-btn-sm delete">삭제</a>
+                                        <a href="#" class="fe-btn fe-btn-primary fe-btn-sm update">수정</a>
+                                        <a href="#" class="fe-btn fe-btn-secondary fe-btn-sm download">다운로드</a>
+                                        <a href="#" class="fe-btn fe-btn-success fe-btn-sm link">링크</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--이미지 파일 :e-->
+            </div>
+            <!-- 기본폼 -->
+            </div>
+        
+    </div>
+    
+    
+
+
+
+</body>
+</html>

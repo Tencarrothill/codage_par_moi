@@ -1,0 +1,259 @@
+
+    <!-- 기본폼 -->
+    <div class="form-horizontal bucket-form">
+        <div class="form-group">
+            <div class="col-sm-2 control-label"><label for="hname"><span class="pilsu">필수</span>colorPicker</label></div>
+            <div class="col-sm-4">
+                <input type="text" name="" data-type="colorPicker" value="#000000"  title="colorPicker 입력창입니다." placeholder="colorPicker을 입력해 주세요."  class="form-control">
+
+            </div>
+        </div>
+    </div>
+    <script src="/pcms/common/js/picker/acego.colorpicker.js"></script>
+
+
+
+    <div class="form-horizontal bucket-form">
+        <div class="form-group time">
+            <div class="col-sm-2 control-label"><div class="label">time picker(입력불가능)</div></div>
+            <div class="col-sm-10">
+                <div class="form-time-selectbox" id="RangePickerselectbox" data-type="timeRangePicker" data-start=".start-time" data-end=".end-time" data-interval="30" data-min-time="08:00" data-max-time="23:00">
+                    <div class="time-group">
+                        <div class="form-group">
+                            <label for="startDate" class="skip">시작시간입력</label>
+                            <input placeholder="" class="form-control time__input start-time" type="text" value="" readonly="" autocomplete="off">
+                            <div class="input__split">
+                                <div class="timepicker__wrap"><button type="button" class="input__item  time__icon ">시간
+                                    열기</button></div>
+                            </div>
+                        </div>
+                        <span class="form__split">~</span>
+                        <div class="form-group">
+                            <label for="endDate" class="skip">종료시간입력</label>
+                            <input placeholder="" class="form-control time__input end-time" type="text" value="" readonly="" autocomplete="off">
+                            <div class="input__split">
+                                <div class="timepicker__wrap"><button type="button" class="input__item  time__icon ">시간
+                                    열기</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group time">
+            <div class="col-sm-2 control-label"><div class="label">time picker(입력가능)</div></div>
+            <div class="col-sm-10">
+                <div class="form-time-selectbox" data-type="timeRangePicker" data-start=".start-time" data-end=".end-time" data-interval="15" data-min-time="06:00" data-max-time="22:00">
+                    <div class="time-group">
+                        <div class="form-group">
+                            <label for="startDate" class="skip">시작시간입력</label>
+                            <input placeholder="HH:MM" class="form-control time__input start-time" type="text" value="" autocomplete="off">
+                        </div>
+                        <span class="form__split">~</span>
+                        <div class="form-group">
+                            <label for="endDate" class="skip">종료시간입력</label>
+                            <input placeholder="HH:MM" class="form-control time__input end-time" type="text" value="" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group time">
+            <div class="col-sm-2 control-label"><div class="label">time picker3</div></div>
+            <div class="col-sm-5">
+                <div class="form-group time" data-type="timePicker" data-start=".start-time" data-end=".end-time" data-interval="30" data-min-time="08:00" data-max-time="23:00">
+                    <label for="startDate" class="skip">시간입력</label>
+                    <input placeholder="" class="form-control time__input single-time" type="text" value="" readonly="" autocomplete="off">
+                    <div class="input__split">
+                        <div class="timepicker__wrap"><button type="button" class="input__item  time__icon ">시간
+                            열기</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group time">
+            <div class="col-sm-2 control-label"><div class="label">time picker4</div></div>
+            <div class="col-sm-5">
+                <div class="form-group time" id="times" data-type="timePicker" data-start=".start-time" data-end=".end-time" data-interval="30" data-min-time="10:00" data-max-time="20:00">
+                    <label for="startDate" class="skip">시간입력</label>
+                    <input placeholder="" class="form-control time__input single-time" type="text" value="" readonly="" autocomplete="off">
+                    <div class="input__split">
+                        <div class="timepicker__wrap"><button type="button" class="input__item  time__icon ">시간
+                            열기</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/pcms/common/js/picker/acego.timepicker.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-type="timeRangePicker"]').timeRangePicker();
+            $('[data-type="timePicker"]').timeSelect();
+        });
+    </script>
+    <!-- 기본폼 -->
+
+
+
+    <div class="form-horizontal bucket-form">
+        <!-- 단일 날짜 선택 -->
+        <div class="form-group date">
+            <div class="col-sm-2 control-label">
+                <div class="label">단일 날짜 테스트</div>
+            </div>
+            <div class="col-sm-5">
+                <div class="form-group date" data-date="datepicker">
+                    <label for="singleDate" class="skip">단일 날짜 입력</label>
+                    <input id="singleDate" name="singleDate" placeholder="yyyy-mm-dd" class="form-control date__input singleDate" type="text" value="">
+                    <div class="input__split">
+                        <div class="datepicker__wrap"><button type="button" class="input__item date__icon">달력 열기</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 시작일과 종료일 선택 -->
+        <div class="form-group date">
+            <div class="col-sm-2 control-label">
+                <div class="label">날짜</div>
+            </div>
+            <div class="col-sm-10">
+                <div class="form-date-selectbox">
+                    <div class="date-group" data-date="daterange">
+                        <div class="form-group date" data-date="datepicker">
+                            <label for="startDate" class="skip">기간시작일입력</label>
+                            <input id="startDate" name="startDate" placeholder="yyyy-mm-dd" class="form-control date__input start" type="text" value="">
+                            <div class="input__split">
+                                <div class="datepicker__wrap"><button type="button" class="input__item  date__icon">달력열기</button></div>
+                            </div>
+                        </div>
+                        <span class="form__split">~</span>
+                        <div class="form-group date" data-date="datepicker">
+                            <label for="endDate" class="skip">기간종료일입력</label>
+                            <input id="endDate" name="endDate" placeholder="yyyy-mm-dd" class="form-control date__input end" type="text" value="">
+                            <div class="input__split">
+                                <div class="datepicker__wrap"><button type="button" class="input__item  date__icon ">달력열기</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 시작일과 종료일 선택 -->
+        <div class="form-group date">
+            <div class="col-sm-2 control-label">
+                <div class="label">날짜 + 시간</div>
+            </div>
+            <div class="col-sm-10">
+                <div class="form-date-selectbox">
+                    <div class="date-group" data-date="datetimerange">
+                        <div class="form-group date" data-date="datepicker">
+                            <label for="startDate" class="skip">기간시작일입력</label>
+                            <input id="startDate" name="startDate" placeholder="yyyy-mm-dd" class="form-control date__input start" type="text" value="">
+                            <div class="input__split">
+                                <div class="datepicker__wrap"><button type="button" class="input__item  date__icon">달력열기</button></div>
+                            </div>
+                        </div>
+                        <span class="form__split">~</span>
+                        <div class="form-group date" data-date="datepicker">
+                            <label for="endDate" class="skip">기간종료일입력</label>
+                            <input id="endDate" name="endDate" placeholder="yyyy-mm-dd" class="form-control date__input end" type="text" value="">
+                            <div class="input__split">
+                                <div class="datepicker__wrap"><button type="button" class="input__item  date__icon ">달력열기</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 주말제외 달력 보기 -->
+        <div class="form-group date">
+            <div class="col-sm-2 control-label">
+                <div class="label">주말제외 달력 테스트</div>
+            </div>
+            <div class="col-sm-5">
+                <div class="form-group date" data-date="weekSelector">
+                    <label for="weekSelector" class="skip">월 선택</label>
+                    <input id="weekSelector" name="monthPicker" placeholder="yyyy-mm" class="form-control date__input" type="text" value="">
+                    <div class="input__split">
+                        <div class="datepicker__wrap"><button type="button" class="input__item date__icon">월별 달력 열기</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 주말제외 달력 보기 -->
+        <div class="form-group date">
+            <div class="col-sm-2 control-label">
+                <div class="label">월간 달력 테스트</div>
+            </div>
+            <div class="col-sm-5">
+                <div class="form-group date" data-date="monthSelectPlugin">
+                    <label for="monthPicker" class="skip">월 선택</label>
+                    <input id="monthPicker" name="monthPicker" placeholder="yyyy-mm" class="form-control date__input monthPicker" type="text" value="">
+                    <div class="input__split">
+                        <div class="datepicker__wrap"><button type="button" class="input__item date__icon">월별 달력 열기</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 단일 날짜 선택 -->
+        <div class="form-group date">
+            <div class="col-sm-2 control-label">
+                <div class="label">활성화 날짜 설정 테스트</div>
+            </div>
+            <div class="col-sm-5">
+                <div class="form-group enabledate">
+                    <label for="enabledate" class="skip">활성화 날짜 입력</label>
+                    <input id="enabledate" name="enabledate" placeholder="yyyy-mm-dd" class="form-control date__input singleDate" type="text" value="">
+                    <div class="input__split">
+                        <div class="datepicker__wrap"><button type="button" class="input__item date__icon">달력 열기</button></div>
+                    </div>
+                </div>
+
+                <script src="/pcms/common/js/picker/acego.datepicker.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.enabledate .date__input').flatpickr({
+                            dateFormat: "Y-m-d",
+                            locale: "ko",         // 한국어 로컬라이즈 설정
+                            disableMobile: true,
+                            enableTime: false,
+                            static: true,
+                            monthNumbers: true,
+                            minDate: new Date(),
+                            enable: [
+                                function(date) {
+                                    // 월이 짝수이고, 날짜가 15일보다 작으면 true를 반환하여 활성화
+                                    //return (date.getMonth() % 2 === 0 && date.getDate() < 15);
+                                    return (date.getDate() < 15);
+                                }
+                            ],
+                            onClose: function(selectedDates, dateStr, instance) {
+                                console.log("Selected dates:", selectedDates);
+                            }
+                        });
+                        $('.enabledate .date__icon').on('click', function() {
+                            var fp = $('.enabledate .date__input').data('flatpickr');
+                            if (fp) {
+                                fp.open();
+                            }
+                        });
+                    });
+                </script>
+                <script>
+                    $(document).ready(function() {
+                        $('[data-date="weekSelector"]').dateSelector();
+
+                        $('[data-date="monthSelectPlugin"]').monthSelectPlugin();
+                    });
+                </script>
+            </div>
+        </div>
+
+    </div>
