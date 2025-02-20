@@ -164,6 +164,16 @@ fieldset {
   font-weight: 600;
 }
 
+input[type=text] {
+  padding: 7px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+input[type=text]:focus {
+  outline: 2px dashed #3E93E3;
+  outline-offset: -2px;
+}
+
 .form-horizontal.bucket-form .form-group {
   display: flex;
   font-size: 18px;
